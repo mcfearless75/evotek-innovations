@@ -120,10 +120,10 @@
       vy: (Math.random() - 0.5) * 0.3,
       r: Math.random() * 1.5 + 0.5,
       alpha: Math.random() * 0.5 + 0.1,
-      color: Math.random() > 0.6 ? '0,229,255' : '0,255,136'
+      color: Math.random() > 0.6 ? '56,189,248' : '52,211,153'
     };
   }
-  for (let i = 0; i < 80; i++) particles.push(mkParticle());
+  for (let i = 0; i < 40; i++) particles.push(mkParticle());
 
   function drawParticles() {
     ctx.clearRect(0, 0, W, H);
@@ -135,25 +135,9 @@
       if (p.y > H) p.y = 0;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${p.color},${p.alpha})`;
+      ctx.fillStyle = `rgba(${p.color},${p.alpha * 0.6})`;
       ctx.fill();
     });
-    // Connect nearby particles
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 120) {
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0,229,255,${0.06 * (1 - dist / 120)})`;
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
-        }
-      }
-    }
     requestAnimationFrame(drawParticles);
   }
   drawParticles();
