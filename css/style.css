@@ -2,7 +2,7 @@
    EVOTEK INNOVATIONS — Futuristic Design System
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Share+Tech+Mono&display=swap');
 
 /* ── Variables ────────────────────────────────────────────── */
 :root {
@@ -19,8 +19,9 @@
   --glow-cyan:  0 0 20px rgba(0, 229, 255, 0.4);
   --glow-green: 0 0 20px rgba(0, 255, 136, 0.4);
   --card-bg:    rgba(0, 229, 255, 0.04);
-  --font-head:  'Share Tech Mono', monospace;
-  --font-body:  'Rajdhani', 'Fira Code', monospace;
+  --font-head:  'Outfit', sans-serif;
+  --font-body:  'Inter', sans-serif;
+  --font-mono:  'Share Tech Mono', monospace;
   --radius:     4px;
   --nav-h:      72px;
 }
@@ -32,9 +33,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.7;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 1.75;
   overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
@@ -125,15 +126,17 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 }
 .nav-logo-name {
   font-family: var(--font-head);
-  font-size: 1.1rem;
-  letter-spacing: 3px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   color: var(--cyan);
   text-shadow: var(--glow-cyan);
 }
 .nav-logo-sub {
-  font-size: 0.55rem;
+  font-size: 0.58rem;
+  font-weight: 500;
   color: var(--muted);
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   display: block;
   margin-top: -2px;
 }
@@ -145,8 +148,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 }
 .nav-link {
   font-family: var(--font-head);
-  font-size: 0.72rem;
-  letter-spacing: 2px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--muted);
   padding: 8px 16px;
   border-radius: var(--radius);
@@ -171,8 +175,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 
 .nav-cta {
   font-family: var(--font-head);
-  font-size: 0.72rem;
-  letter-spacing: 2px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--bg);
   background: var(--cyan);
   padding: 10px 24px;
@@ -281,8 +286,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   align-items: center;
   gap: 6px;
   font-family: var(--font-head);
-  font-size: 0.65rem;
-  letter-spacing: 2.5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   color: var(--cyan);
   border: 1px solid var(--border);
   padding: 5px 14px;
@@ -296,8 +302,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 .section-header { margin-bottom: 64px; }
 .section-label {
   font-family: var(--font-head);
-  font-size: 0.65rem;
-  letter-spacing: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: var(--muted);
   margin-bottom: 16px;
   display: flex;
@@ -313,7 +320,7 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 .section-title {
   font-family: var(--font-head);
   font-size: clamp(1.8rem, 4vw, 3rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--text);
   letter-spacing: -0.5px;
@@ -339,8 +346,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   align-items: center;
   gap: 10px;
   font-family: var(--font-head);
-  font-size: 0.75rem;
-  letter-spacing: 2px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--bg);
   background: var(--cyan);
   padding: 14px 32px;
@@ -355,8 +363,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   align-items: center;
   gap: 10px;
   font-family: var(--font-head);
-  font-size: 0.75rem;
-  letter-spacing: 2px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--cyan);
   border: 1px solid var(--border);
   padding: 14px 32px;
@@ -371,8 +380,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   align-items: center;
   gap: 10px;
   font-family: var(--font-head);
-  font-size: 0.75rem;
-  letter-spacing: 2px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--bg);
   background: var(--green);
   padding: 14px 32px;
@@ -415,8 +425,9 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 
 .hero-label {
   font-family: var(--font-head);
-  font-size: 0.65rem;
-  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: var(--cyan);
   margin-bottom: 24px;
   display: flex;
@@ -428,7 +439,7 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 .hero-title {
   font-family: var(--font-head);
   font-size: clamp(2.4rem, 6vw, 5rem);
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 24px;
@@ -562,8 +573,8 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   line-height: 1;
 }
 .stat-label {
-  font-size: 0.65rem;
-  letter-spacing: 2px;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
   color: var(--muted);
   margin-top: 8px;
   text-transform: uppercase;
@@ -676,8 +687,9 @@ footer {
 }
 .footer-brand-name {
   font-family: var(--font-head);
-  font-size: 1.1rem;
-  letter-spacing: 3px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   color: var(--cyan);
   text-shadow: var(--glow-cyan);
   margin-bottom: 12px;
@@ -685,8 +697,9 @@ footer {
 .footer-brand-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.8; margin-bottom: 24px; }
 .footer-heading {
   font-family: var(--font-head);
-  font-size: 0.65rem;
-  letter-spacing: 3px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--cyan);
   margin-bottom: 20px;
 }
@@ -737,8 +750,9 @@ footer {
 }
 .page-hero-label {
   font-family: var(--font-head);
-  font-size: 0.65rem;
-  letter-spacing: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: var(--cyan);
   margin-bottom: 16px;
   display: flex;
@@ -749,7 +763,7 @@ footer {
 .page-hero h1 {
   font-family: var(--font-head);
   font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 400;
+  font-weight: 800;
   color: var(--text);
   margin-bottom: 20px;
   line-height: 1.15;
@@ -787,18 +801,20 @@ footer {
 }
 .team-name {
   font-family: var(--font-head);
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0px;
   color: var(--text);
   margin-bottom: 4px;
 }
 .team-role {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   color: var(--cyan);
   margin-bottom: 16px;
 }
-.team-bio { font-size: 0.82rem; color: var(--muted); line-height: 1.8; }
+.team-bio { font-size: 0.9rem; color: var(--muted); line-height: 1.8; }
 .team-tag {
   display: inline-block;
   margin-top: 16px;
@@ -846,8 +862,9 @@ footer {
   align-items: center;
   gap: 16px;
   font-family: var(--font-head);
-  font-size: 0.82rem;
-  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0px;
   color: var(--text);
   background: var(--card-bg);
   transition: color 0.2s;
