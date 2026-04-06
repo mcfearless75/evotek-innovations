@@ -2,25 +2,25 @@
    EVOTEK INNOVATIONS — Futuristic Design System
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@500;600;700&display=swap');
 
 /* ── Variables ────────────────────────────────────────────── */
 :root {
-  --bg:         #03070F;
-  --surface:    #071525;
-  --surface-2:  #0D1F33;
+  --bg:         #0A1628;
+  --surface:    #0D2040;
+  --surface-2:  #122A50;
   --cyan:       #00E5FF;
   --green:      #00FF88;
   --purple:     #7C3AED;
   --red:        #FF3864;
-  --text:       #E2E8F0;
-  --muted:      #64748B;
-  --border:     rgba(0, 229, 255, 0.15);
+  --text:       #E8EFF8;
+  --muted:      #7A90A8;
+  --border:     rgba(0, 229, 255, 0.18);
   --glow-cyan:  0 0 20px rgba(0, 229, 255, 0.4);
   --glow-green: 0 0 20px rgba(0, 255, 136, 0.4);
-  --card-bg:    rgba(0, 229, 255, 0.03);
+  --card-bg:    rgba(0, 229, 255, 0.04);
   --font-head:  'Share Tech Mono', monospace;
-  --font-body:  'Fira Code', monospace;
+  --font-body:  'Rajdhani', 'Fira Code', monospace;
   --radius:     4px;
   --nav-h:      72px;
 }
@@ -32,7 +32,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -83,7 +84,7 @@ nav {
   top: 0; left: 0; right: 0;
   height: var(--nav-h);
   z-index: 1000;
-  background: rgba(3, 7, 15, 0.85);
+  background: rgba(10, 22, 40, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   transition: border-color 0.3s;
@@ -105,15 +106,22 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   align-items: center;
   gap: 12px;
 }
-.nav-logo-mark {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid var(--cyan);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--glow-cyan);
+.nav-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  animation: logo-pulse 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.7)) drop-shadow(0 0 16px rgba(0, 255, 136, 0.4));
+}
+@keyframes logo-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(0,229,255,0.7)) drop-shadow(0 0 14px rgba(0,255,136,0.35));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(0,229,255,1)) drop-shadow(0 0 28px rgba(0,255,136,0.6));
+    transform: scale(1.06);
+  }
 }
 .nav-logo-name {
   font-family: var(--font-head);
@@ -200,7 +208,7 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   position: fixed;
   top: var(--nav-h);
   left: 0; right: 0;
-  background: rgba(3, 7, 15, 0.97);
+  background: rgba(10, 22, 40, 0.97);
   border-bottom: 1px solid var(--border);
   padding: 24px 32px;
   flex-direction: column;
@@ -801,6 +809,22 @@ footer {
   border: 1px solid rgba(0,255,136,0.2);
   padding: 4px 12px;
   border-radius: var(--radius);
+}
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 20px rgba(0,229,255,0.15);
+  margin: 0 auto 16px;
+  display: block;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.team-photo:hover {
+  border-color: rgba(0,229,255,0.5);
+  box-shadow: 0 0 30px rgba(0,229,255,0.3);
 }
 
 /* ── FAQ ──────────────────────────────────────────────────── */
