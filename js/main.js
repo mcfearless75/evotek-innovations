@@ -158,6 +158,19 @@
   }
   drawParticles();
 
+  /* ── Currency Ticker (terminal $ signs) ─────────────────── */
+  const currencies = ['$', '£', '€', '¥', '₹', '₩', '₿', '₴', '฿', '₦'];
+  const cmdSpans = document.querySelectorAll('.t-cmd');
+  if (cmdSpans.length) {
+    cmdSpans.forEach((span, i) => {
+      let idx = Math.floor(Math.random() * currencies.length);
+      setInterval(() => {
+        idx = (idx + 1) % currencies.length;
+        span.textContent = currencies[idx] + ' ';
+      }, 1400 + i * 220);
+    });
+  }
+
   /* ── Typewriter (hero only) ──────────────────────────────── */
   const typer = document.getElementById('typewriter');
   if (typer) {
