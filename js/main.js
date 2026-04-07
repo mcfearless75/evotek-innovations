@@ -158,6 +158,20 @@
   }
   drawParticles();
 
+  /* ── Bio Tabs ────────────────────────────────────────────── */
+  const bioTabBtns = document.querySelectorAll('.bio-tab-btn');
+  if (bioTabBtns.length) {
+    function activateBioTab(btn) {
+      bioTabBtns.forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.bio-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const panel = document.getElementById(btn.dataset.tab);
+      if (panel) { panel.classList.add('active'); }
+    }
+    bioTabBtns.forEach(btn => btn.addEventListener('click', () => activateBioTab(btn)));
+    activateBioTab(bioTabBtns[0]);
+  }
+
   /* ── Currency Ticker (terminal $ signs) ─────────────────── */
   const currencies = ['$', '£', '€', '¥', '₹', '₩', '₿', '₴', '฿', '₦'];
   const cmdSpans = document.querySelectorAll('.t-cmd');

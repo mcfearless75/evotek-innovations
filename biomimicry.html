@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biomimicry | EvoTek Innovations | Nature's Engineering</title>
+  <meta name="description" content="EvoTek's Engineered Surface Physics is grounded in biomimicry — replicating nature's own surface protection principles from shark skin to lotus leaves."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="canonical" href="https://www.evotekinnovations.com/biomimicry.html"/>
+  <style>
+    /* Bio Tab UI */
+    .bio-tabs-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .bio-tab-btn {
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: transparent;
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .bio-tab-btn:hover {
+      color: var(--cyan);
+      border-color: rgba(0,229,255,0.4);
+    }
+    .bio-tab-btn.active {
+      color: var(--cyan);
+      border-color: var(--cyan);
+      background: rgba(0,229,255,0.06);
+      box-shadow: 0 0 12px rgba(0,229,255,0.15);
+    }
+    .bio-panel { display: none; }
+    .bio-panel.active { display: block; }
+    .bio-panel-inner {
+      padding: 0;
+    }
+    .bio-app-label {
+      font-family: var(--font-head);
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      color: var(--cyan);
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    .bio-sep {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 20px 0;
+    }
+    .claims-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .claims-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.75;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0,229,255,0.06);
+    }
+    .claims-list li:last-child { border-bottom: none; }
+    .claims-list li::before {
+      content: '→';
+      color: var(--cyan);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/EVO2.png" alt="EvoTek Logo" class="nav-logo-img"/>
+      <div>
+        <span class="nav-logo-name">EVOTEK</span>
+        <span class="nav-logo-sub">INNOVATIONS</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="sectors.html" class="nav-link">SECTORS</a>
+      <a href="biomimicry.html" class="nav-link active">BIOMIMICRY</a>
+      <a href="why-evotek.html" class="nav-link">WHY EVOTEK</a>
+      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-cta">CONTACT US</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <a href="about.html">ABOUT</a>
+  <a href="sectors.html">SECTORS</a>
+  <a href="biomimicry.html" class="active">BIOMIMICRY</a>
+  <a href="why-evotek.html">WHY EVOTEK</a>
+  <a href="claims.html">OUR CLAIMS</a>
+  <a href="team.html">MEET THE TEAM</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html" class="nav-cta">CONTACT US</a>
+</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      HOME
+    </a>
+    <div class="page-hero-label">ENGINEERED SURFACE PHYSICS</div>
+    <h1>Nature's Way — <span class="accent">Biomimicry</span> Behind EvoTek ESP</h1>
+    <p class="page-hero-sub">How billions of years of natural evolution shaped the world's most advanced surface protection platform.</p>
+  </div>
+</header>
+
+<!-- SECTION 1: NATURE'S LOGIC -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">NATURE'S LOGIC</div>
+    </div>
+    <div class="hud-card reveal" style="max-width:900px;">
+      <div style="margin-bottom:32px;">
+        <span class="chip" style="margin-bottom:18px;">THE PRINCIPLE</span>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek's Engineered Surface Physics (ESP) platform is grounded in the principles of biomimicry — the practice of studying how nature solves complex problems and translating those solutions into advanced human technologies. Instead of relying on chemicals or biocides, our Smart Surface Technologies replicate the micro-textures, charge patterns, and surface-energy behaviours found throughout the natural world — in sharks, insects, and leaves. These systems stay clean, dry, protected, and resilient without ever releasing toxins, and EvoTek applies the same physics at the molecular scale.</p>
+      </div>
+      <div style="border-top:1px solid var(--border);padding-top:28px;margin-bottom:32px;">
+        <span class="chip chip-green" style="margin-bottom:18px;">THE EVOTEK PHILOSOPHY</span>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">The EvoTek Philosophy is Nature's Logic. Nature never uses bleach, acids, or toxic disinfectants. Instead it uses physics — structure, charge, energy, and morphology — to stay clean, protected, and resilient. Our innovations are engineered for modern life and to protect ourselves and our planet, as our ESP platform is the biomimetic evolution of hygiene and material protection: continuous, non-toxic, sustainable, and aligned with the way the natural world has always worked.</p>
+      </div>
+      <div style="border-top:1px solid var(--border);padding-top:28px;">
+        <span class="chip" style="margin-bottom:18px;">OUR APPROACH</span>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">At EvoTek Innovations, we believe the smartest technologies are the ones nature invented first. Our Engineered Surface Physics (ESP) platform is built on the principles of biomimicry — the science of studying how the natural world solves problems and translating those solutions into advanced human technologies. From the lotus leaf's self-cleaning surface, to the water-shedding feathers of birds, to the micro-textures that prevent bacteria from settling on shark skin, nature has spent billions of years perfecting sustainable, non-toxic, self-maintaining systems. EvoTek replicates these same physical principles at the molecular scale, creating surfaces that stay cleaner, drier, and more resilient without chemicals, poisons, or environmental burden. This is nature's logic, engineered for modern life: protection through physics, longevity through design, and hygiene through the same mechanisms the natural world has relied on since the beginning of time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- SECTION 2: BIOLOGICAL INSPIRATIONS — TABS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal" style="max-width:700px;margin-bottom:20px;">
+      <div class="section-label">BIOLOGICAL INSPIRATIONS</div>
+      <h2 class="section-title">10 Natural Systems Behind Our <span class="accent">Technology</span></h2>
+      <p class="section-sub">Below are the key biological inspirations that shape our ESP platform. Each example represents millions of years of evolutionary refinement — physics solutions we have translated into advanced surface protection.</p>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="bio-tabs-nav reveal" role="tablist" aria-label="Biological inspirations">
+      <button class="bio-tab-btn active" data-tab="bio-dragonfly" role="tab" aria-selected="true" aria-controls="bio-dragonfly">Dragonfly Wings</button>
+      <button class="bio-tab-btn" data-tab="bio-gecko" role="tab" aria-selected="false" aria-controls="bio-gecko">Gecko Feet</button>
+      <button class="bio-tab-btn" data-tab="bio-butterfly" role="tab" aria-selected="false" aria-controls="bio-butterfly">Butterfly Wings</button>
+      <button class="bio-tab-btn" data-tab="bio-lotus" role="tab" aria-selected="false" aria-controls="bio-lotus">Lotus Leaf</button>
+      <button class="bio-tab-btn" data-tab="bio-shark" role="tab" aria-selected="false" aria-controls="bio-shark">Shark Skin</button>
+      <button class="bio-tab-btn" data-tab="bio-spider" role="tab" aria-selected="false" aria-controls="bio-spider">Spider Silk</button>
+      <button class="bio-tab-btn" data-tab="bio-mollusc" role="tab" aria-selected="false" aria-controls="bio-mollusc">Mollusc Shells</button>
+      <button class="bio-tab-btn" data-tab="bio-ant" role="tab" aria-selected="false" aria-controls="bio-ant">Ant Cuticles</button>
+      <button class="bio-tab-btn" data-tab="bio-bird" role="tab" aria-selected="false" aria-controls="bio-bird">Bird Feathers</button>
+      <button class="bio-tab-btn" data-tab="bio-cactus" role="tab" aria-selected="false" aria-controls="bio-cactus">Cactus Skin</button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div class="bio-panel active" id="bio-dragonfly" role="tabpanel">
+      <div class="hud-card hud-card-green bio-panel-inner">
+        <span class="chip chip-green" style="margin-bottom:18px;">PHYSICAL ANTIMICROBIAL</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Dragonfly Wings</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Dragonfly wings possess nanoscale structures that physically disrupt bacterial cells on contact. This is a purely physical, non-chemical antimicrobial effect.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek mirrors this principle by engineering nanoscale surface morphology that reduces adhesion, prevents settlement, and disrupts biofilm formation.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-gecko" role="tabpanel">
+      <div class="hud-card bio-panel-inner">
+        <span class="chip" style="margin-bottom:18px;">SURFACE ENERGY CONTROL</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Gecko Feet</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Geckos adhere to surfaces using millions of microscopic setae that manipulate surface energy rather than glue.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek uses the same physics — controlling surface energy to determine how liquids, oils, residues, and contaminants interact with a surface, ensuring they do not bond or accumulate.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-butterfly" role="tabpanel">
+      <div class="hud-card bio-panel-inner">
+        <span class="chip" style="margin-bottom:18px;">SELF-CLEANING STRUCTURE</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Butterfly Wings</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Butterfly wings remain clean and vibrant through micro-ridges that repel water and shed dirt.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek applies similar structural principles to create self-cleaning, stain-resistant, water-repellent surfaces across fabrics, plastics, metals, and wood.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-lotus" role="tabpanel">
+      <div class="hud-card hud-card-green bio-panel-inner">
+        <span class="chip chip-green" style="margin-bottom:18px;">HYDROPHOBICITY</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Lotus Leaf</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">The lotus leaf is the classic example of natural self-cleaning. Its micro-texture forces water to bead and roll off, carrying dirt away.</p>
+        <hr class="bio-sep" style="border-color:rgba(0,255,136,0.15);"/>
+        <div class="bio-app-label" style="color:var(--green);">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek replicates this effect to deliver long-lasting hydrophobicity and reduced contamination.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-shark" role="tabpanel">
+      <div class="hud-card bio-panel-inner">
+        <span class="chip" style="margin-bottom:18px;">ANTI-FOULING</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Shark Skin</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Shark skin uses ribbed denticles to prevent bacteria and algae from attaching.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek's surface-energy engineering reduces microbial adhesion and fouling in the same way, without chemicals or toxins.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-spider" role="tabpanel">
+      <div class="hud-card hud-card-green bio-panel-inner">
+        <span class="chip chip-green" style="margin-bottom:18px;">NANOSCALE STRUCTURING</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Spider Silk</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Spider silk manages moisture and maintains structural integrity through nanoscale arrangement.</p>
+        <hr class="bio-sep" style="border-color:rgba(0,255,136,0.15);"/>
+        <div class="bio-app-label" style="color:var(--green);">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek's polymeric matrices use similar nanoscale structuring to reinforce materials, reduce Environmental Stress Cracking (ESC), and improve durability.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-mollusc" role="tabpanel">
+      <div class="hud-card bio-panel-inner">
+        <span class="chip" style="margin-bottom:18px;">STRESS DISTRIBUTION</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Mollusc Shells</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Shells use layered micro-structures to resist cracking and environmental stress.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek applies this principle to distribute stress across surfaces, preventing micro-fracture initiation and chemical-driven degradation.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-ant" role="tabpanel">
+      <div class="hud-card hud-card-green bio-panel-inner">
+        <span class="chip chip-green" style="margin-bottom:18px;">CONTAMINATION RESISTANCE</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Ant Cuticles</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Ant exoskeletons resist contamination through hydrophobicity and micro-textures.</p>
+        <hr class="bio-sep" style="border-color:rgba(0,255,136,0.15);"/>
+        <div class="bio-app-label" style="color:var(--green);">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek mirrors this by reducing residue build-up and preventing microbial settlement.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-bird" role="tabpanel">
+      <div class="hud-card bio-panel-inner">
+        <span class="chip" style="margin-bottom:18px;">WATER REPELLENCY</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Bird Feathers</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Feathers repel water and dirt through micro-barbs and structural design.</p>
+        <hr class="bio-sep"/>
+        <div class="bio-app-label">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek creates similar water-repellent, dirt-resistant behaviour without oils or chemical coatings.</p>
+      </div>
+    </div>
+
+    <div class="bio-panel" id="bio-cactus" role="tabpanel">
+      <div class="hud-card hud-card-green bio-panel-inner">
+        <span class="chip chip-green" style="margin-bottom:18px;">UV &amp; MOISTURE CONTROL</span>
+        <h3 style="font-family:var(--font-head);font-size:1.15rem;letter-spacing:1px;color:var(--text);margin-bottom:14px;">Cactus Skin</h3>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">Cacti manage moisture and reflect UV through micro-textures.</p>
+        <hr class="bio-sep" style="border-color:rgba(0,255,136,0.15);"/>
+        <div class="bio-app-label" style="color:var(--green);">EvoTek Application:</div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;">EvoTek incorporates these principles to deliver UV stability, moisture control, and extended material lifecycles.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="chip" style="margin:0 auto 20px;">EXPERIENCE THE SCIENCE</div>
+      <h2>Ready to Experience <span style="color:var(--cyan)">Nature's Engineering?</span></h2>
+      <p>Discover how EvoTek's biomimetic platform can transform surface protection across your organisation.</p>
+      <div class="btns">
+        <a href="contact.html" class="btn-primary">GET IN TOUCH</a>
+        <a href="why-evotek.html" class="btn-ghost">WHY EVOTEK</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
+        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <span class="accred-badge">NHS SUPPLY PARTNER</span>
+          <span class="accred-badge">ISO 9001</span>
+          <span class="accred-badge">ISO 14001</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">NAVIGATION</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="biomimicry.html">Biomimicry</a></li>
+          <li><a href="why-evotek.html">Why EvoTek</a></li>
+          <li><a href="claims.html">Our Claims</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">SECTORS</div>
+        <ul class="footer-links">
+          <li><a href="sectors.html">Healthcare</a></li>
+          <li><a href="sectors.html">Food Service</a></li>
+          <li><a href="sectors.html">Transport</a></li>
+          <li><a href="sectors.html">Education</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">CONTACT</div>
+        <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
+        <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span style="color:var(--border)">ESP // SST // LONDON</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  /* Bio Tab Switch */
+  (function () {
+    var buttons = document.querySelectorAll('.bio-tab-btn');
+    var panels = document.querySelectorAll('.bio-panel');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.getAttribute('data-tab');
+        buttons.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        panels.forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        var panel = document.getElementById(target);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  })();
+</script>
+</body>
+</html>
