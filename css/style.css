@@ -392,6 +392,65 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
 }
 .btn-green:hover { box-shadow: var(--glow-green); transform: translateY(-2px); }
 
+/* ── LOGO WATERMARK (reusable) ────────────────────────────── */
+.logo-watermark {
+  position: absolute;
+  background: url('../images/EVO2.png') no-repeat center / contain;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Hero — large right-side watermark */
+.hero-logo-watermark {
+  width: 520px;
+  height: 520px;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.035;
+  animation: watermark-drift 60s linear infinite;
+}
+@keyframes watermark-drift {
+  0%   { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+/* Page hero — medium centred watermark */
+.page-hero-watermark {
+  width: 360px;
+  height: 360px;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.035;
+}
+/* CTA banner — subtle centred watermark */
+.cta-logo-watermark {
+  width: 280px;
+  height: 280px;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.04;
+}
+/* Footer — bottom-right watermark */
+.footer-logo-watermark {
+  width: 200px;
+  height: 200px;
+  right: 32px;
+  bottom: 32px;
+  opacity: 0.04;
+}
+/* Section accent — tiny inline logo */
+.logo-accent {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('../images/EVO2.png') no-repeat center / contain;
+  vertical-align: middle;
+  opacity: 0.5;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 4px rgba(0,229,255,0.4));
+}
+
 /* ── HERO ─────────────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
@@ -1006,6 +1065,19 @@ footer {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border), transparent);
   margin: 0;
+  position: relative;
+}
+.sep::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background: url('../images/EVO2.png') no-repeat center / contain;
+  opacity: 0.12;
+  filter: drop-shadow(0 0 6px rgba(0,229,255,0.4));
 }
 
 /* ── LAYOUT CLASSES (replaces inline styles) ─────────────── */
