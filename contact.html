@@ -48,11 +48,6 @@
   <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
   <a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
-  <div class="lang-switcher" style="margin:16px auto 0;justify-content:center;">
-    <button class="lang-btn active" onclick="setLang('en')" id="mob-btn-en">EN</button>
-    <div class="lang-divider"></div>
-    <button class="lang-btn" onclick="setLang('de')" id="mob-btn-de">DE</button>
-  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -60,13 +55,13 @@
   <div class="logo-watermark page-hero-watermark"></div>
   <div class="hero-grid-bg"></div>
   <div class="container">
-    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
+    <a href="index.html" data-i18n="nav.home" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
       HOME
     </a>
-    <div class="page-hero-label">INITIATE CONTACT</div>
-    <h1>We'd Love to <span class="accent">Hear</span><br>From You</h1>
-    <p class="page-hero-sub">Whether you're ready to deploy SST technology or just want to learn more — our team is standing by.</p>
+    <div class="page-hero-label" data-i18n="contact.hero.label">INITIATE CONTACT</div>
+    <h1 data-i18n-html="contact.hero.h1">We'd Love to <span class="accent">Hear</span><br>From You</h1>
+    <p class="page-hero-sub" data-i18n="contact.hero.sub">Whether you're ready to deploy SST technology or just want to learn more — our team is standing by.</p>
   </div>
 </header>
 
@@ -77,50 +72,50 @@
 
       <!-- FORM -->
       <div class="reveal">
-        <div class="section-label" style="margin-bottom:28px;">SEND A MESSAGE</div>
+        <div class="section-label" style="margin-bottom:28px;" data-i18n="contact.form.label">SEND A MESSAGE</div>
         <div class="hud-card">
           <form id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="first-name">FIRST NAME</label>
+                <label class="form-label" for="first-name" data-i18n="contact.form.fname">FIRST NAME</label>
                 <input class="form-input" id="first-name" name="first_name" type="text" placeholder="Pete" autocomplete="given-name" required/>
               </div>
               <div class="form-group">
-                <label class="form-label" for="last-name">LAST NAME</label>
+                <label class="form-label" for="last-name" data-i18n="contact.form.lname">LAST NAME</label>
                 <input class="form-input" id="last-name" name="last_name" type="text" placeholder="Avery" autocomplete="family-name" required/>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="email">EMAIL ADDRESS</label>
+                <label class="form-label" for="email" data-i18n="contact.form.email">EMAIL ADDRESS</label>
                 <input class="form-input" id="email" name="email" type="email" placeholder="you@organisation.com" autocomplete="email" required/>
               </div>
               <div class="form-group">
-                <label class="form-label" for="phone">PHONE (OPTIONAL)</label>
+                <label class="form-label" for="phone" data-i18n="contact.form.phone">PHONE (OPTIONAL)</label>
                 <input class="form-input" id="phone" name="phone" type="tel" placeholder="+44 7000 000000" autocomplete="tel"/>
               </div>
             </div>
             <div class="form-group">
-              <label class="form-label" for="sector">YOUR SECTOR</label>
+              <label class="form-label" for="sector" data-i18n="contact.form.sector">YOUR SECTOR</label>
               <select class="form-input" id="sector" name="sector" style="cursor:pointer;">
-                <option value="" disabled selected>Select your sector...</option>
-                <option>Healthcare</option>
-                <option>Food Service / Catering</option>
-                <option>Hospitality / Hotels</option>
-                <option>Public Transport</option>
-                <option>Education</option>
-                <option>Workplace / Office</option>
-                <option>Leisure / Entertainment</option>
-                <option>Other</option>
+                <option value="" disabled selected data-i18n="contact.form.sector.placeholder">Select your sector...</option>
+                <option data-i18n="contact.form.sector.hc">Healthcare</option>
+                <option data-i18n="contact.form.sector.food">Food Service / Catering</option>
+                <option data-i18n="contact.form.sector.hosp">Hospitality / Hotels</option>
+                <option data-i18n="contact.form.sector.trans">Public Transport</option>
+                <option data-i18n="contact.form.sector.edu">Education</option>
+                <option data-i18n="contact.form.sector.work">Workplace / Office</option>
+                <option data-i18n="contact.form.sector.leis">Leisure / Entertainment</option>
+                <option data-i18n="contact.form.sector.other">Other</option>
               </select>
             </div>
             <div class="form-group">
-              <label class="form-label" for="message">MESSAGE</label>
+              <label class="form-label" for="message" data-i18n="contact.form.msg">MESSAGE</label>
               <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your organisation and how we can help..." required></textarea>
             </div>
             <button type="submit" class="btn-primary" style="width:100%;justify-content:center;min-height:44px;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              TRANSMIT MESSAGE
+              <span data-i18n="contact.form.submit">TRANSMIT MESSAGE</span>
             </button>
           </form>
         </div>
@@ -128,14 +123,14 @@
 
       <!-- INFO -->
       <div class="reveal" style="transition-delay:120ms;">
-        <div class="section-label" style="margin-bottom:28px;">CONTACT INFORMATION</div>
+        <div class="section-label" style="margin-bottom:28px;" data-i18n="contact.info.label">CONTACT INFORMATION</div>
 
         <div class="contact-info-item">
           <div class="contact-info-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
           <div>
-            <div class="contact-info-label">ADDRESS</div>
+            <div class="contact-info-label" data-i18n="contact.addr.label">ADDRESS</div>
             <div class="contact-info-val">3rd Floor, 86-90 Paul Street<br>London, England</div>
           </div>
         </div>
@@ -145,7 +140,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div>
-            <div class="contact-info-label">EMAIL</div>
+            <div class="contact-info-label" data-i18n="contact.email.label">EMAIL</div>
             <div class="contact-info-val">
               <a href="mailto:info@evotekinnovations.com" style="color:var(--cyan);transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">info@evotekinnovations.com</a>
             </div>
@@ -154,42 +149,42 @@
 
         <!-- Hours -->
         <div style="margin-top:32px;">
-          <div class="section-label" style="margin-bottom:20px;">HOURS OF OPERATION</div>
+          <div class="section-label" style="margin-bottom:20px;" data-i18n="contact.hours.label">HOURS OF OPERATION</div>
           <div class="hud-card" style="padding:24px;">
             <div class="hours-row">
-              <span class="hours-day">Monday</span>
+              <span class="hours-day" data-i18n="contact.hours.mon">Monday</span>
               <span class="hours-time">09:00 — 20:00</span>
             </div>
             <div class="hours-row">
-              <span class="hours-day">Tuesday</span>
+              <span class="hours-day" data-i18n="contact.hours.tue">Tuesday</span>
               <span class="hours-time">09:00 — 20:00</span>
             </div>
             <div class="hours-row">
-              <span class="hours-day">Wednesday</span>
+              <span class="hours-day" data-i18n="contact.hours.wed">Wednesday</span>
               <span class="hours-time">09:00 — 20:00</span>
             </div>
             <div class="hours-row">
-              <span class="hours-day">Thursday</span>
+              <span class="hours-day" data-i18n="contact.hours.thu">Thursday</span>
               <span class="hours-time">09:00 — 20:00</span>
             </div>
             <div class="hours-row">
-              <span class="hours-day">Friday</span>
+              <span class="hours-day" data-i18n="contact.hours.fri">Friday</span>
               <span class="hours-time">09:00 — 15:00</span>
             </div>
             <div class="hours-row">
-              <span class="hours-day">Saturday</span>
-              <span class="hours-closed">CLOSED</span>
+              <span class="hours-day" data-i18n="contact.hours.sat">Saturday</span>
+              <span class="hours-closed" data-i18n="contact.hours.closed">CLOSED</span>
             </div>
             <div class="hours-row" style="border:none;">
-              <span class="hours-day">Sunday</span>
-              <span class="hours-closed">CLOSED</span>
+              <span class="hours-day" data-i18n="contact.hours.sun">Sunday</span>
+              <span class="hours-closed" data-i18n="contact.hours.closed2">CLOSED</span>
             </div>
           </div>
         </div>
 
         <!-- Accreditations -->
         <div style="margin-top:32px;">
-          <div class="section-label" style="margin-bottom:20px;">ACCREDITATIONS</div>
+          <div class="section-label" style="margin-bottom:20px;" data-i18n="contact.accred.label">ACCREDITATIONS</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;">
             <span class="accred-badge" style="color:var(--green);border-color:rgba(0,255,136,0.2);">NHS SUPPLY PARTNER</span>
             <span class="accred-badge">ISO 9001</span>
@@ -216,22 +211,22 @@
 <section class="section-sm">
   <div class="container">
     <div class="section-header reveal" style="text-align:center;max-width:500px;margin:0 auto 40px;">
-      <div class="section-label" style="justify-content:center;">LOCATION</div>
-      <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2.2rem);">Based in <span class="accent">London</span></h2>
+      <div class="section-label" style="justify-content:center;" data-i18n="contact.loc.label">LOCATION</div>
+      <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2.2rem);" data-i18n-html="contact.loc.title">Based in <span class="accent">London</span></h2>
     </div>
     <div class="hud-card reveal" style="padding:0;overflow:hidden;">
       <div class="location-grid">
         <div>
-          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;">CITY</div>
-          <div style="font-family:var(--font-head);color:var(--cyan);">LONDON</div>
+          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;" data-i18n="contact.loc.city.k">CITY</div>
+          <div style="font-family:var(--font-head);color:var(--cyan);" data-i18n="contact.loc.city.v">LONDON</div>
         </div>
         <div>
-          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;">ADDRESS</div>
+          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;" data-i18n="contact.loc.addr.k">ADDRESS</div>
           <div style="font-family:var(--font-head);color:var(--text);font-size:0.85rem;">86-90 PAUL STREET</div>
         </div>
         <div>
-          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;">FLOOR</div>
-          <div style="font-family:var(--font-head);color:var(--text);">3RD FLOOR</div>
+          <div style="font-family:var(--font-head);font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;" data-i18n="contact.loc.floor.k">FLOOR</div>
+          <div style="font-family:var(--font-head);color:var(--text);" data-i18n="contact.loc.floor.v">3RD FLOOR</div>
         </div>
       </div>
     </div>
@@ -245,12 +240,12 @@
   <div class="container">
     <div class="cta-banner reveal">
       <div class="logo-watermark cta-logo-watermark"></div>
-      <div class="chip" style="margin:0 auto 20px;">EXPLORE MORE</div>
-      <h2>Learn More About <span style="color:var(--cyan)">SST</span> Technology</h2>
-      <p>Discover the science, meet the team, and find answers to common questions.</p>
+      <div class="chip" style="margin:0 auto 20px;" data-i18n="contact.cta.chip">EXPLORE MORE</div>
+      <h2 data-i18n-html="contact.cta.title">Learn More About <span style="color:var(--cyan)">SST</span> Technology</h2>
+      <p data-i18n="contact.cta.sub">Discover the science, meet the team, and find answers to common questions.</p>
       <div class="btns">
-        <a href="about.html" class="btn-primary">ABOUT THE TECHNOLOGY</a>
-        <a href="faq.html" class="btn-ghost">VIEW FAQ</a>
+        <a href="about.html" class="btn-primary" data-i18n="contact.cta.btn1">ABOUT THE TECHNOLOGY</a>
+        <a href="faq.html" class="btn-ghost" data-i18n="contact.cta.btn2">VIEW FAQ</a>
       </div>
     </div>
   </div>
@@ -263,7 +258,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
-        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <p class="footer-brand-desc" data-i18n="foot.desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;">
           <span class="accred-badge">NHS SUPPLY PARTNER</span>
           <span class="accred-badge">ISO 9001</span>
@@ -271,35 +266,35 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">NAVIGATION</div>
+        <div class="footer-heading" data-i18n="foot.nav.h">NAVIGATION</div>
         <ul class="footer-links">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-i18n="foot.nav.1">About Us</a></li>
+          <li><a href="team.html" data-i18n="foot.nav.2">Meet the Team</a></li>
+          <li><a href="faq.html" data-i18n="foot.nav.3">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="foot.nav.4">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">SECTORS</div>
+        <div class="footer-heading" data-i18n="foot.sec.h">SECTORS</div>
         <ul class="footer-links">
-          <li><a href="about.html">Healthcare</a></li>
-          <li><a href="about.html">Food Service</a></li>
-          <li><a href="about.html">Public Transport</a></li>
-          <li><a href="about.html">Education</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.1">Healthcare</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.2">Food Service</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.3">Public Transport</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.4">Education</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">CONTACT</div>
+        <div class="footer-heading" data-i18n="foot.con.h">CONTACT</div>
         <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
         <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
         <div class="footer-contact-item" style="margin-top:16px;font-size:0.7rem;letter-spacing:1px;">
-          Mon–Thu: <span>09:00–20:00</span><br>
-          Friday: <span>09:00–15:00</span>
+          <span data-i18n="foot.hours.1">Mon–Thu: 09:00–20:00</span><br>
+          <span data-i18n="foot.hours.2">Friday: 09:00–15:00</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span data-i18n="foot.copy">© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
       <span style="color:var(--border)">SST // CND TECHNOLOGY // LONDON</span>
     </div>
   </div>

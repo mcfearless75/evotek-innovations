@@ -48,11 +48,6 @@
   <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
   <a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
-  <div class="lang-switcher" style="margin:16px auto 0;justify-content:center;">
-    <button class="lang-btn active" onclick="setLang('en')" id="mob-btn-en">EN</button>
-    <div class="lang-divider"></div>
-    <button class="lang-btn" onclick="setLang('de')" id="mob-btn-de">DE</button>
-  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -60,13 +55,13 @@
   <div class="logo-watermark page-hero-watermark"></div>
   <div class="hero-grid-bg"></div>
   <div class="container">
-    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
+    <a href="index.html" data-i18n="nav.home" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
       HOME
     </a>
-    <div class="page-hero-label">KNOWLEDGE BASE</div>
-    <h1>Frequently Asked <span class="accent">Questions</span></h1>
-    <p class="page-hero-sub">Everything you need to know about Smart Surface Technology, our process, compliance standards and deployment.</p>
+    <div class="page-hero-label" data-i18n="faq.hero.label">KNOWLEDGE BASE</div>
+    <h1 data-i18n-html="faq.hero.h1">Frequently Asked <span class="accent">Questions</span></h1>
+    <p class="page-hero-sub" data-i18n="faq.hero.sub">Everything you need to know about Smart Surface Technology, our process, compliance standards and deployment.</p>
   </div>
 </header>
 
@@ -77,145 +72,145 @@
 
       <div>
         <!-- SECTOR -->
-        <div class="section-label" style="margin-bottom:24px;">SECTORS &amp; APPLICATIONS</div>
+        <div class="section-label" style="margin-bottom:24px;" data-i18n="faq.grp1.label">SECTORS &amp; APPLICATIONS</div>
 
         <div class="faq-item reveal">
           <button class="faq-q" aria-expanded="false">
-            Who will benefit from this service?
+            <span data-i18n="faq.q1">Who will benefit from this service?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">All public sectors including Healthcare, Workplace, Hotels, Leisure, Entertainment, Catering and Public Transport with high traffic of public. The system prevents cross-contamination risk from surfaces, making it ideal anywhere people gather.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a1">All public sectors including Healthcare, Workplace, Hotels, Leisure, Entertainment, Catering and Public Transport with high traffic of public. The system prevents cross-contamination risk from surfaces, making it ideal anywhere people gather.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:40ms">
           <button class="faq-q" aria-expanded="false">
-            Can this process be used on soft furnishings?
+            <span data-i18n="faq.q2">Can this process be used on soft furnishings?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">Yes. Due to a carrier complex in the formula, the SST coating attaches to any surface — soft furnishings, hard surfaces, metals, plastics, fabrics and porous substrates. Surface versatility is one of the key advantages of organosilane chemistry.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a2">Yes. Due to a carrier complex in the formula, the SST coating attaches to any surface — soft furnishings, hard surfaces, metals, plastics, fabrics and porous substrates. Surface versatility is one of the key advantages of organosilane chemistry.</div>
         </div>
 
         <!-- SAFETY -->
-        <div class="section-label" style="margin-top:40px;margin-bottom:24px;">SAFETY &amp; ENVIRONMENT</div>
+        <div class="section-label" style="margin-top:40px;margin-bottom:24px;" data-i18n="faq.grp2.label">SAFETY &amp; ENVIRONMENT</div>
 
         <div class="faq-item reveal" style="transition-delay:80ms">
           <button class="faq-q" aria-expanded="false">
-            What makes your process non-toxic?
+            <span data-i18n="faq.q3">What makes your process non-toxic?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The process is food-safe and water-based. It uses a natural acid formulation with no harmful residues. It has been independently tested and approved for use in sensitive environments including food preparation areas and healthcare settings.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a3">The process is food-safe and water-based. It uses a natural acid formulation with no harmful residues. It has been independently tested and approved for use in sensitive environments including food preparation areas and healthcare settings.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:100ms">
           <button class="faq-q" aria-expanded="false">
-            What makes your process biodegradable?
+            <span data-i18n="faq.q4">What makes your process biodegradable?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">Our process is water-based and made with a natural acid. The surfactants contained comply with the biodegradability criteria laid down in Regulation EC 648/2004. This ensures minimal environmental impact and aligns with NHS Green Plan sustainability priorities.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a4">Our process is water-based and made with a natural acid. The surfactants contained comply with the biodegradability criteria laid down in Regulation EC 648/2004. This ensures minimal environmental impact and aligns with NHS Green Plan sustainability priorities.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:120ms">
           <button class="faq-q" aria-expanded="false">
-            What makes this process more effective than regular fogging?
+            <span data-i18n="faq.q5">What makes this process more effective than regular fogging?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The applicator is specially designed to the exact micron, ensuring treatment particles don't linger in the air. This ensures respiratory safety and a fast 5–10 minute drying time. Standard fogging leaves airborne particles that pose respiratory risk; our SST process bonds directly to surfaces.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a5">The applicator is specially designed to the exact micron, ensuring treatment particles don't linger in the air. This ensures respiratory safety and a fast 5–10 minute drying time. Standard fogging leaves airborne particles that pose respiratory risk; our SST process bonds directly to surfaces.</div>
         </div>
 
         <!-- PATHOGENS -->
-        <div class="section-label" style="margin-top:40px;margin-bottom:24px;">PATHOGEN COVERAGE</div>
+        <div class="section-label" style="margin-top:40px;margin-bottom:24px;" data-i18n="faq.grp3.label">PATHOGEN COVERAGE</div>
 
         <div class="faq-item reveal" style="transition-delay:160ms">
           <button class="faq-q" aria-expanded="false">
-            What species of pathogens do you target?
+            <span data-i18n="faq.q6">What species of pathogens do you target?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">Bacteria, Fungi and Viruses. The SST coating provides broad-spectrum efficacy across diverse microbial classes including hospital-acquired infection pathogens, antibiotic-resistant bacteria, all enveloped viruses as defined in EN 14476, and fungal species prevalent in healthcare environments.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a6">Bacteria, Fungi and Viruses. The SST coating provides broad-spectrum efficacy across diverse microbial classes including hospital-acquired infection pathogens, antibiotic-resistant bacteria, all enveloped viruses as defined in EN 14476, and fungal species prevalent in healthcare environments.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:180ms">
           <button class="faq-q" aria-expanded="false">
-            How does your process target Coronavirus?
+            <span data-i18n="faq.q7">How does your process target Coronavirus?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">UK-based BluTest Laboratories completed the latest Gold Standard COVID-19 Vaccinia testing in April 2020. The product achieved Log4, resulting in a 99.99% viricidal reduction score. It is effective against all enveloped viruses as defined in EN 14476:2013 + A2:2019 Annex A, including all Coronaviruses and SARS-CoV-2.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a7">UK-based BluTest Laboratories completed the latest Gold Standard COVID-19 Vaccinia testing in April 2020. The product achieved Log4, resulting in a 99.99% viricidal reduction score. It is effective against all enveloped viruses as defined in EN 14476:2013 + A2:2019 Annex A, including all Coronaviruses and SARS-CoV-2.</div>
         </div>
 
         <!-- STANDARDS -->
-        <div class="section-label" style="margin-top:40px;margin-bottom:24px;">COMPLIANCE &amp; STANDARDS</div>
+        <div class="section-label" style="margin-top:40px;margin-bottom:24px;" data-i18n="faq.grp4.label">COMPLIANCE &amp; STANDARDS</div>
 
         <div class="faq-item reveal" style="transition-delay:220ms">
           <button class="faq-q" aria-expanded="false">
-            What regulations does your process cover on biodegradability?
+            <span data-i18n="faq.q8">What regulations does your process cover on biodegradability?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The surfactants contained comply with the biodegradability criteria laid down in Regulation EC 648/2004. This is the European standard for surfactant biodegradability in detergents and cleaning products.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a8">The surfactants contained comply with the biodegradability criteria laid down in Regulation EC 648/2004. This is the European standard for surfactant biodegradability in detergents and cleaning products.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:240ms">
           <button class="faq-q" aria-expanded="false">
-            What standards does your process comply with?
+            <span data-i18n="faq.q9">What standards does your process comply with?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">Complies with Modified DIN EN 1040, Modified DIN EN 1276, and EN 14476. Also recognised with international standards ISO 9001 (Quality Management) and ISO 14001 (Environmental Management). EvoTek holds NHS supply partner status.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a9">Complies with Modified DIN EN 1040, Modified DIN EN 1276, and EN 14476. Also recognised with international standards ISO 9001 (Quality Management) and ISO 14001 (Environmental Management). EvoTek holds NHS supply partner status.</div>
         </div>
 
         <!-- PRACTICAL -->
-        <div class="section-label" style="margin-top:40px;margin-bottom:24px;">PRACTICAL APPLICATION</div>
+        <div class="section-label" style="margin-top:40px;margin-bottom:24px;" data-i18n="faq.grp5.label">PRACTICAL APPLICATION</div>
 
         <div class="faq-item reveal" style="transition-delay:280ms">
           <button class="faq-q" aria-expanded="false">
-            Does your sealant last with other cleaning methods?
+            <span data-i18n="faq.q10">Does your sealant last with other cleaning methods?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">Yes. The sealant is bonded to the surface via covalent organosilane chemistry, so further chemical and physical forms of cleaning can be carried out as normal. The antimicrobial layer is non-leaching and is not removed by standard cleaning protocols.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a10">Yes. The sealant is bonded to the surface via covalent organosilane chemistry, so further chemical and physical forms of cleaning can be carried out as normal. The antimicrobial layer is non-leaching and is not removed by standard cleaning protocols.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:300ms">
           <button class="faq-q" aria-expanded="false">
-            What is the drying time of this process?
+            <span data-i18n="faq.q11">What is the drying time of this process?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">5–10 minutes. This is significantly faster than standard fogging methods. The specially designed applicator delivers particles at the exact micron, ensuring rapid bonding to surfaces and minimal disruption to operations.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a11">5–10 minutes. This is significantly faster than standard fogging methods. The specially designed applicator delivers particles at the exact micron, ensuring rapid bonding to surfaces and minimal disruption to operations.</div>
         </div>
 
         <div class="faq-item reveal" style="transition-delay:320ms">
           <button class="faq-q" aria-expanded="false">
-            How long does the protection last?
+            <span data-i18n="faq.q12">How long does the protection last?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The Smart Surface Technology provides continuous, non-depleting antimicrobial protection for up to 336 hours (14 days). Unlike conventional chemical treatments that require frequent reapplication, SST — as a Non-Depleting Technology (NDT) — remains active between applications while standard cleaning continues as normal.</div>
+          <div class="faq-a" role="region" data-i18n="faq.a12">The Smart Surface Technology provides continuous, non-depleting antimicrobial protection for up to 336 hours (14 days). Unlike conventional chemical treatments that require frequent reapplication, SST — as a Non-Depleting Technology (NDT) — remains active between applications while standard cleaning continues as normal.</div>
         </div>
       </div>
 
       <!-- Sidebar -->
       <div class="faq-sidebar">
         <div class="hud-card hud-card-green reveal">
-          <div class="chip chip-green" style="margin-bottom:20px;">QUICK STATS</div>
-          <div class="data-row"><span class="data-key">Efficacy Score</span><span class="data-val">99.99%</span></div>
-          <div class="data-row"><span class="data-key">Protection Duration</span><span class="data-val">336h</span></div>
-          <div class="data-row"><span class="data-key">Drying Time</span><span class="data-val">5–10 min</span></div>
-          <div class="data-row"><span class="data-key">Toxicity</span><span class="data-val">NONE</span></div>
-          <div class="data-row"><span class="data-key">Food Safe</span><span class="data-val">YES</span></div>
-          <div class="data-row"><span class="data-key">Biodegradable</span><span class="data-val">YES</span></div>
-          <div class="data-row"><span class="data-key">Pathogen Classes</span><span class="data-val">3</span></div>
-          <div class="data-row"><span class="data-key">Viral Reduction (Log)</span><span class="data-val">Log4</span></div>
+          <div class="chip chip-green" style="margin-bottom:20px;" data-i18n="faq.sidebar.chip">QUICK STATS</div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.eff.k">Efficacy Score</span><span class="data-val">99.99%</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.dur.k">Protection Duration</span><span class="data-val">336h</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.dry.k">Drying Time</span><span class="data-val">5–10 min</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.tox.k">Toxicity</span><span class="data-val" data-i18n="faq.sidebar.none">NONE</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.food.k">Food Safe</span><span class="data-val" data-i18n="faq.sidebar.yes">YES</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.bio.k">Biodegradable</span><span class="data-val" data-i18n="faq.sidebar.yes2">YES</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.path.k">Pathogen Classes</span><span class="data-val">3</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="faq.sidebar.log.k">Viral Reduction (Log)</span><span class="data-val">Log4</span></div>
         </div>
 
         <div class="hud-card" style="margin-top:24px;">
-          <div class="chip" style="margin-bottom:16px;">STILL HAVE QUESTIONS?</div>
-          <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;margin-bottom:20px;">Our team is happy to answer any specific questions about deploying SST in your organisation.</p>
-          <a href="contact.html" class="btn-primary" style="width:100%;justify-content:center;">CONTACT US</a>
+          <div class="chip" style="margin-bottom:16px;" data-i18n="faq.still.chip">STILL HAVE QUESTIONS?</div>
+          <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;margin-bottom:20px;" data-i18n="faq.still.p">Our team is happy to answer any specific questions about deploying SST in your organisation.</p>
+          <a href="contact.html" class="btn-primary" style="width:100%;justify-content:center;" data-i18n="faq.still.btn">CONTACT US</a>
         </div>
 
         <div class="hud-card" style="margin-top:24px;">
-          <div class="chip" style="margin-bottom:16px;">CERTIFICATIONS</div>
+          <div class="chip" style="margin-bottom:16px;" data-i18n="faq.cert.chip">CERTIFICATIONS</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <span class="accred-badge" style="display:block;text-align:center;">EN 14476:2013+A2:2019</span>
             <span class="accred-badge" style="display:block;text-align:center;">DIN EN 1040 / DIN EN 1276</span>
             <span class="accred-badge" style="display:block;text-align:center;">ISO 9001 · ISO 14001</span>
             <span class="accred-badge" style="display:block;text-align:center;">EC 648/2004</span>
-            <span class="accred-badge" style="display:block;text-align:center;color:var(--green);border-color:rgba(0,255,136,0.2);">NHS SUPPLY PARTNER</span>
+            <span class="accred-badge" style="display:block;text-align:center;color:var(--green);border-color:rgba(0,255,136,0.2);" data-i18n="faq.cert.nhs">NHS SUPPLY PARTNER</span>
           </div>
         </div>
       </div>
@@ -231,12 +226,12 @@
   <div class="container">
     <div class="cta-banner reveal">
       <div class="logo-watermark cta-logo-watermark"></div>
-      <div class="chip" style="margin:0 auto 20px;">GET STARTED</div>
-      <h2>Didn't Find Your <span style="color:var(--cyan)">Answer?</span></h2>
-      <p>Contact our team directly — we're available Mon–Thu 09:00–20:00 and Friday 09:00–15:00.</p>
+      <div class="chip" style="margin:0 auto 20px;" data-i18n="faq.cta.chip">GET STARTED</div>
+      <h2 data-i18n-html="faq.cta.title">Didn't Find Your <span style="color:var(--cyan)">Answer?</span></h2>
+      <p data-i18n="faq.cta.sub">Contact our team directly — we're available Mon–Thu 09:00–20:00 and Friday 09:00–15:00.</p>
       <div class="btns">
-        <a href="contact.html" class="btn-primary">SEND A MESSAGE</a>
-        <a href="team.html" class="btn-ghost">MEET THE TEAM</a>
+        <a href="contact.html" class="btn-primary" data-i18n="faq.cta.btn1">SEND A MESSAGE</a>
+        <a href="team.html" class="btn-ghost" data-i18n="faq.cta.btn2">MEET THE TEAM</a>
       </div>
     </div>
   </div>
@@ -249,7 +244,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
-        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <p class="footer-brand-desc" data-i18n="foot.desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;">
           <span class="accred-badge">NHS SUPPLY PARTNER</span>
           <span class="accred-badge">ISO 9001</span>
@@ -257,31 +252,31 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">NAVIGATION</div>
+        <div class="footer-heading" data-i18n="foot.nav.h">NAVIGATION</div>
         <ul class="footer-links">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-i18n="foot.nav.1">About Us</a></li>
+          <li><a href="team.html" data-i18n="foot.nav.2">Meet the Team</a></li>
+          <li><a href="faq.html" data-i18n="foot.nav.3">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="foot.nav.4">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">SECTORS</div>
+        <div class="footer-heading" data-i18n="foot.sec.h">SECTORS</div>
         <ul class="footer-links">
-          <li><a href="about.html">Healthcare</a></li>
-          <li><a href="about.html">Food Service</a></li>
-          <li><a href="about.html">Public Transport</a></li>
-          <li><a href="about.html">Education</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.1">Healthcare</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.2">Food Service</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.3">Public Transport</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.4">Education</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">CONTACT</div>
+        <div class="footer-heading" data-i18n="foot.con.h">CONTACT</div>
         <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
         <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span data-i18n="foot.copy">© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
       <span style="color:var(--border)">SST // CND TECHNOLOGY // LONDON</span>
     </div>
   </div>
