@@ -20,14 +20,19 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="sectors.html" class="nav-link">SECTORS</a>
-      <a href="biomimicry.html" class="nav-link">BIOMIMICRY</a>
-      <a href="why-evotek.html" class="nav-link">WHY EVOTEK</a>
-      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
-      <a href="team.html" class="nav-link">TEAM</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="contact.html" class="nav-cta">CONTACT US</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">ABOUT</a>
+      <a href="sectors.html" class="nav-link" data-i18n="nav.sectors">SECTORS</a>
+      <a href="biomimicry.html" class="nav-link" data-i18n="nav.biomimicry">BIOMIMICRY</a>
+      <a href="why-evotek.html" class="nav-link" data-i18n="nav.why">WHY EVOTEK</a>
+      <a href="claims.html" class="nav-link" data-i18n="nav.claims">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link" data-i18n="nav.team">TEAM</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+        <div class="lang-divider"></div>
+        <button class="lang-btn" onclick="setLang('de')" id="btn-de">DE</button>
+      </div>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -35,14 +40,14 @@
   </div>
 </nav>
 <div id="mobile-nav">
-  <a href="about.html">ABOUT</a>
-  <a href="sectors.html">SECTORS</a>
-  <a href="biomimicry.html">BIOMIMICRY</a>
-  <a href="why-evotek.html">WHY EVOTEK</a>
-  <a href="claims.html">OUR CLAIMS</a>
-  <a href="team.html">MEET THE TEAM</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="nav-cta">CONTACT US</a>
+  <a href="about.html" data-i18n="nav.about">ABOUT</a>
+  <a href="sectors.html" data-i18n="nav.sectors">SECTORS</a>
+  <a href="biomimicry.html" data-i18n="nav.biomimicry">BIOMIMICRY</a>
+  <a href="why-evotek.html" data-i18n="nav.why">WHY EVOTEK</a>
+  <a href="claims.html" data-i18n="nav.claims">OUR CLAIMS</a>
+  <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
 </div>
 
 <!-- PAGE HERO -->
@@ -109,7 +114,7 @@
             What makes this process more effective than regular fogging?
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The applicator is specially designed to the exact micron, ensuring disinfectant particles don't linger in the air. This ensures respiratory safety and a fast 5–10 minute drying time. Standard fogging leaves airborne particles that pose respiratory risk; our SST process bonds directly to surfaces.</div>
+          <div class="faq-a" role="region">The applicator is specially designed to the exact micron, ensuring treatment particles don't linger in the air. This ensures respiratory safety and a fast 5–10 minute drying time. Standard fogging leaves airborne particles that pose respiratory risk; our SST process bonds directly to surfaces.</div>
         </div>
 
         <!-- PATHOGENS -->
@@ -128,7 +133,7 @@
             How does your process target Coronavirus?
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">UK-based BluTest Laboratories completed the latest Gold Standard COVID-19 Vaccinia testing in April 2020. The product achieved Log4, resulting in a 99.99% viricidal kill score. It is effective against all enveloped viruses as defined in EN 14476:2013 + A2:2019 Annex A, including all Coronaviruses and SARS-CoV-2.</div>
+          <div class="faq-a" role="region">UK-based BluTest Laboratories completed the latest Gold Standard COVID-19 Vaccinia testing in April 2020. The product achieved Log4, resulting in a 99.99% viricidal reduction score. It is effective against all enveloped viruses as defined in EN 14476:2013 + A2:2019 Annex A, including all Coronaviruses and SARS-CoV-2.</div>
         </div>
 
         <!-- STANDARDS -->
@@ -174,7 +179,7 @@
             How long does the protection last?
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-a" role="region">The Smart Surface Technology provides continuous, non-depleting antimicrobial protection for up to 336 hours (14 days). Unlike consumable disinfectants that require frequent reapplication, SST remains active between applications while standard cleaning continues as normal.</div>
+          <div class="faq-a" role="region">The Smart Surface Technology provides continuous, non-depleting antimicrobial protection for up to 336 hours (14 days). Unlike conventional chemical treatments that require frequent reapplication, SST — as a Non-Depleting Technology (NDT) — remains active between applications while standard cleaning continues as normal.</div>
         </div>
       </div>
 
@@ -182,14 +187,14 @@
       <div class="faq-sidebar">
         <div class="hud-card hud-card-green reveal">
           <div class="chip chip-green" style="margin-bottom:20px;">QUICK STATS</div>
-          <div class="data-row"><span class="data-key">Kill Score</span><span class="data-val">99.99%</span></div>
+          <div class="data-row"><span class="data-key">Efficacy Score</span><span class="data-val">99.99%</span></div>
           <div class="data-row"><span class="data-key">Protection Duration</span><span class="data-val">336h</span></div>
           <div class="data-row"><span class="data-key">Drying Time</span><span class="data-val">5–10 min</span></div>
           <div class="data-row"><span class="data-key">Toxicity</span><span class="data-val">NONE</span></div>
           <div class="data-row"><span class="data-key">Food Safe</span><span class="data-val">YES</span></div>
           <div class="data-row"><span class="data-key">Biodegradable</span><span class="data-val">YES</span></div>
           <div class="data-row"><span class="data-key">Pathogen Classes</span><span class="data-val">3</span></div>
-          <div class="data-row"><span class="data-key">COVID Kill (Log)</span><span class="data-val">Log4</span></div>
+          <div class="data-row"><span class="data-key">Viral Reduction (Log)</span><span class="data-val">Log4</span></div>
         </div>
 
         <div class="hud-card" style="margin-top:24px;">
@@ -251,7 +256,7 @@
         <ul class="footer-links">
           <li><a href="about.html">About Us</a></li>
           <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -277,6 +282,7 @@
   </div>
 </footer>
 
+<script src="js/lang.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

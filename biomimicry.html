@@ -40,7 +40,7 @@
     .bio-panel { display: none; }
     .bio-panel.active { display: block; }
     .bio-panel-inner {
-      padding: 0;
+      padding: 32px 32px 32px 56px;
     }
     .bio-app-label {
       font-family: var(--font-head);
@@ -91,14 +91,19 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="sectors.html" class="nav-link">SECTORS</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">ABOUT</a>
+      <a href="sectors.html" class="nav-link" data-i18n="nav.sectors">SECTORS</a>
       <a href="biomimicry.html" class="nav-link active">BIOMIMICRY</a>
-      <a href="why-evotek.html" class="nav-link">WHY EVOTEK</a>
-      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
-      <a href="team.html" class="nav-link">TEAM</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="contact.html" class="nav-cta">CONTACT US</a>
+      <a href="why-evotek.html" class="nav-link" data-i18n="nav.why">WHY EVOTEK</a>
+      <a href="claims.html" class="nav-link" data-i18n="nav.claims">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link" data-i18n="nav.team">TEAM</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+        <div class="lang-divider"></div>
+        <button class="lang-btn" onclick="setLang('de')" id="btn-de">DE</button>
+      </div>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -106,14 +111,14 @@
   </div>
 </nav>
 <div id="mobile-nav">
-  <a href="about.html">ABOUT</a>
-  <a href="sectors.html">SECTORS</a>
+  <a href="about.html" data-i18n="nav.about">ABOUT</a>
+  <a href="sectors.html" data-i18n="nav.sectors">SECTORS</a>
   <a href="biomimicry.html" class="active">BIOMIMICRY</a>
-  <a href="why-evotek.html">WHY EVOTEK</a>
-  <a href="claims.html">OUR CLAIMS</a>
-  <a href="team.html">MEET THE TEAM</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="nav-cta">CONTACT US</a>
+  <a href="why-evotek.html" data-i18n="nav.why">WHY EVOTEK</a>
+  <a href="claims.html" data-i18n="nav.claims">OUR CLAIMS</a>
+  <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
 </div>
 
 <!-- PAGE HERO -->
@@ -334,7 +339,7 @@
           <li><a href="why-evotek.html">Why EvoTek</a></li>
           <li><a href="claims.html">Our Claims</a></li>
           <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -360,6 +365,7 @@
   </div>
 </footer>
 
+<script src="js/lang.js"></script>
 <script src="js/main.js"></script>
 <script>
   /* Bio Tab Switch */

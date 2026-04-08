@@ -21,14 +21,19 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="sectors.html" class="nav-link">SECTORS</a>
-      <a href="biomimicry.html" class="nav-link">BIOMIMICRY</a>
-      <a href="why-evotek.html" class="nav-link">WHY EVOTEK</a>
-      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
-      <a href="team.html" class="nav-link">TEAM</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="contact.html" class="nav-cta">CONTACT US</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">ABOUT</a>
+      <a href="sectors.html" class="nav-link" data-i18n="nav.sectors">SECTORS</a>
+      <a href="biomimicry.html" class="nav-link" data-i18n="nav.biomimicry">BIOMIMICRY</a>
+      <a href="why-evotek.html" class="nav-link" data-i18n="nav.why">WHY EVOTEK</a>
+      <a href="claims.html" class="nav-link" data-i18n="nav.claims">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link" data-i18n="nav.team">TEAM</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+        <div class="lang-divider"></div>
+        <button class="lang-btn" onclick="setLang('de')" id="btn-de">DE</button>
+      </div>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -36,14 +41,14 @@
   </div>
 </nav>
 <div id="mobile-nav">
-  <a href="about.html">ABOUT</a>
-  <a href="sectors.html">SECTORS</a>
-  <a href="biomimicry.html">BIOMIMICRY</a>
-  <a href="why-evotek.html">WHY EVOTEK</a>
-  <a href="claims.html">OUR CLAIMS</a>
-  <a href="team.html">MEET THE TEAM</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="nav-cta">CONTACT US</a>
+  <a href="about.html" data-i18n="nav.about">ABOUT</a>
+  <a href="sectors.html" data-i18n="nav.sectors">SECTORS</a>
+  <a href="biomimicry.html" data-i18n="nav.biomimicry">BIOMIMICRY</a>
+  <a href="why-evotek.html" data-i18n="nav.why">WHY EVOTEK</a>
+  <a href="claims.html" data-i18n="nav.claims">OUR CLAIMS</a>
+  <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
 </div>
 
 <!-- HERO -->
@@ -55,38 +60,38 @@
   <div class="container hero-content-grid">
     <div>
       <div class="hero-label">
-        <span class="live-dot"></span> NHS SUPPLY PARTNER &nbsp;·&nbsp; LONDON, UK
+        <span class="live-dot"></span> <span data-i18n="hero.label">NHS SUPPLY PARTNER &nbsp;·&nbsp; LONDON, UK</span>
       </div>
-      <h1 class="hero-title">
+      <h1 class="hero-title" data-i18n-html="hero.title">
         WELCOME TO<br>A MORE<br>
-        <span class="glitch">HYGIENIC</span><br>WORLD
+        <span class="glitch">HYGIENIC</span><br>WORLD FOR YOUR<br>HOME, FAMILY<br>&amp; BUSINESS
       </h1>
-      <p class="hero-sub">
+      <p class="hero-sub" data-i18n-html="hero.sub">
         Next-generation Smart Surface Technology delivering continuous, non-depleting antimicrobial protection for up to <strong style="color:var(--text)">336 hours</strong>. Deployed across healthcare, food service, transport &amp; beyond.
       </p>
-      <p class="hero-sub" style="margin-top:-16px;">Protecting <strong style="color:var(--cyan)"><span id="typewriter">HEALTHCARE</span></strong></p>
+      <p class="hero-sub" style="margin-top:-16px;"><span data-i18n="hero.protecting">Protecting</span> <strong style="color:var(--cyan)"><span id="typewriter">HEALTHCARE</span></strong></p>
       <div class="hero-btns">
         <a href="contact.html" class="btn-primary">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          GET IN TOUCH
+          <span data-i18n="hero.cta1">GET IN TOUCH</span>
         </a>
         <a href="about.html" class="btn-ghost">
-          LEARN MORE
+          <span data-i18n="hero.cta2">LEARN MORE</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
       </div>
       <div class="hero-stats">
         <div>
           <div class="hero-stat-num"><span data-target="99.99" data-decimal="2" data-suffix="%">0%</span></div>
-          <div class="hero-stat-label">VIRICIDAL KILL SCORE</div>
+          <div class="hero-stat-label" data-i18n="hero.stat1">VIRICIDAL EFFICACY SCORE</div>
         </div>
         <div>
           <div class="hero-stat-num"><span data-target="336" data-suffix="h">0h</span></div>
-          <div class="hero-stat-label">CONTINUOUS PROTECTION</div>
+          <div class="hero-stat-label" data-i18n="hero.stat2">CONTINUOUS PROTECTION</div>
         </div>
         <div>
           <div class="hero-stat-num"><span data-target="5" data-suffix="min">0min</span></div>
-          <div class="hero-stat-label">DRYING TIME</div>
+          <div class="hero-stat-label" data-i18n="hero.stat3">DRYING TIME</div>
         </div>
       </div>
     </div>
@@ -133,8 +138,8 @@
       </div>
 
       <!-- Floating badges -->
-      <div class="chip chip-green hero-floating-badge" style="top:-16px;right:-16px;">BIODEGRADABLE</div>
-      <div class="chip hero-floating-badge" style="bottom:-16px;left:-16px;">WHO RECOGNISED</div>
+      <div class="chip chip-green hero-floating-badge" style="top:-16px;right:-16px;" data-i18n="hero.badge1">BIODEGRADABLE</div>
+      <div class="chip hero-floating-badge" style="bottom:-16px;left:-16px;" data-i18n="hero.badge2">WHO RECOGNISED</div>
     </div>
   </div>
 </section>
@@ -147,19 +152,19 @@
     <div class="stats-grid">
       <div class="stat-item reveal">
         <div class="stat-num"><span data-target="99.99" data-decimal="2" data-suffix="%">—</span></div>
-        <div class="stat-label">VIRICIDAL EFFICACY</div>
+        <div class="stat-label" data-i18n="stats.efficacy">VIRICIDAL EFFICACY</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:80ms">
         <div class="stat-num"><span data-target="336" data-suffix="h">—</span></div>
-        <div class="stat-label">HOURS PROTECTION</div>
+        <div class="stat-label" data-i18n="stats.hours">HOURS PROTECTION</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:160ms">
         <div class="stat-num"><span data-target="30" data-suffix="+yr">—</span></div>
-        <div class="stat-label">COMBINED EXPERTISE</div>
+        <div class="stat-label" data-i18n="stats.expertise">COMBINED EXPERTISE</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:240ms">
         <div class="stat-num"><span data-target="3">—</span></div>
-        <div class="stat-label">PATHOGEN CLASSES TARGETED</div>
+        <div class="stat-label" data-i18n="stats.pathogens">PATHOGEN CLASSES TARGETED</div>
       </div>
     </div>
   </div>
@@ -181,7 +186,7 @@
         </div>
         <div class="nature-intro">
           <h3>The EvoTek Philosophy</h3>
-          <p>Nature's Logic — nature never uses bleach, acids, or toxic disinfectants. Instead it uses physics — structure, charge, energy, and morphology — to stay clean, protected, and resilient. Our innovations are engineered for modern life and to protect ourselves and our planet. Our ESP platform is the biomimetic evolution of hygiene and material protection: continuous, non-toxic, sustainable, and aligned with the way the natural world has always worked.</p>
+          <p>Nature's Logic — nature never uses bleach, acids, or toxic chemical treatments. Instead it uses physics — structure, charge, energy, and morphology — to stay clean, protected, and resilient. Our innovations are engineered for modern life and to protect ourselves and our planet. Our ESP platform is the biomimetic evolution of hygiene and material protection: continuous, non-toxic, sustainable, and aligned with the way the natural world has always worked.</p>
         </div>
         <div class="nature-intro">
           <h3>Our Approach</h3>
@@ -230,7 +235,7 @@
     <div class="section-header reveal">
       <div class="section-label">MECHANISM OF ACTION</div>
       <h2 class="section-title">How <span class="accent">SST</span> Works</h2>
-      <p class="section-sub">A materials science molecular approach — not a traditional biocide. Surfaces become permanently inhospitable to microbial colonisation for 336 hours.</p>
+      <p class="section-sub">A materials science molecular approach — not a biocide, no active chemicals released. Surfaces become persistently inhospitable to microbial colonisation for 336 hours.</p>
     </div>
     <div class="grid-2" style="gap:48px;align-items:start;">
       <div>
@@ -268,15 +273,15 @@
           <div class="chip chip-green" style="margin-bottom:20px;">PATHOGEN COVERAGE</div>
           <div class="data-row">
             <span class="data-key">Bacteria</span>
-            <span class="data-val">ELIMINATED</span>
+            <span class="data-val">INHIBITED</span>
           </div>
           <div class="data-row">
             <span class="data-key">Viruses (incl. SARS-CoV-2)</span>
-            <span class="data-val">99.99%</span>
+            <span class="data-val">99.99% REDUCTION</span>
           </div>
           <div class="data-row">
             <span class="data-key">Fungi</span>
-            <span class="data-val">ELIMINATED</span>
+            <span class="data-val">INHIBITED</span>
           </div>
           <div class="data-row">
             <span class="data-key">Enveloped Viruses (EN 14476)</span>
@@ -284,7 +289,7 @@
           </div>
           <div class="data-row">
             <span class="data-key">Coronavirus / SARS-CoV-2</span>
-            <span class="data-val">Log4 KILL</span>
+            <span class="data-val">Log4 REDUCTION</span>
           </div>
         </div>
         <div class="hud-card">
@@ -355,8 +360,8 @@
       </div>
       <div class="hud-card reveal" style="transition-delay:80ms">
         <div class="chip chip-green" style="margin-bottom:20px;">FOOD SERVICE</div>
-        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;">Safe Disinfection</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;">Food-safe formulation provides continuous protection without harmful residues. Non-toxic, water-based, naturally biodegradable.</p>
+        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;">Safe Decontamination</h3>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;">Food-safe formulation provides continuous antimicrobial protection without harmful residues. Non-toxic, water-based, naturally biodegradable.</p>
       </div>
       <div class="hud-card reveal" style="transition-delay:160ms">
         <div class="chip" style="margin-bottom:20px;">PUBLIC SPACES</div>
@@ -400,12 +405,12 @@
   <div class="container">
     <div class="cta-banner reveal">
       <div class="logo-watermark cta-logo-watermark"></div>
-      <div class="chip" style="margin:0 auto 20px;">NEXT STEPS</div>
-      <h2>Ready to <span style="color:var(--cyan)">Protect</span> Your Environment?</h2>
-      <p>Speak with our team about deploying SST technology in your organisation.</p>
+      <div class="chip" style="margin:0 auto 20px;" data-i18n="cta.chip">NEXT STEPS</div>
+      <h2 data-i18n-html="cta.title">Ready to <span style="color:var(--cyan)">Protect</span> Your Environment?</h2>
+      <p data-i18n="cta.sub">Speak with our team about deploying SST technology in your organisation.</p>
       <div class="btns">
-        <a href="contact.html" class="btn-primary">GET IN TOUCH</a>
-        <a href="faq.html" class="btn-ghost">READ FAQ</a>
+        <a href="contact.html" class="btn-primary" data-i18n="cta.btn1">GET IN TOUCH</a>
+        <a href="faq.html" class="btn-ghost" data-i18n="cta.btn2">READ FAQ</a>
       </div>
     </div>
   </div>
@@ -418,7 +423,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
-        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <p class="footer-brand-desc" data-i18n="foot.desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;">
           <span class="accred-badge">NHS SUPPLY PARTNER</span>
           <span class="accred-badge">ISO 9001</span>
@@ -427,41 +432,42 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">NAVIGATION</div>
+        <div class="footer-heading" data-i18n="foot.nav.h">NAVIGATION</div>
         <ul class="footer-links">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-i18n="foot.nav.1">About Us</a></li>
+          <li><a href="team.html" data-i18n="foot.nav.2">Meet the Team</a></li>
+          <li><a href="faq.html" data-i18n="foot.nav.3">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="foot.nav.4">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">SECTORS</div>
+        <div class="footer-heading" data-i18n="foot.sec.h">SECTORS</div>
         <ul class="footer-links">
-          <li><a href="about.html">Healthcare</a></li>
-          <li><a href="about.html">Food Service</a></li>
-          <li><a href="about.html">Public Transport</a></li>
-          <li><a href="about.html">Education</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.1">Healthcare</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.2">Food Service</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.3">Public Transport</a></li>
+          <li><a href="about.html" data-i18n="foot.sec.4">Education</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">CONTACT</div>
+        <div class="footer-heading" data-i18n="foot.con.h">CONTACT</div>
         <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
         <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
         <div class="footer-contact-item" style="margin-top:16px;font-size:0.7rem;letter-spacing:1px;">
-          Mon–Thu: <span>09:00–20:00</span><br>
-          Friday: <span>09:00–15:00</span><br>
-          Sat–Sun: <span style="color:var(--muted)">Closed</span>
+          <span data-i18n="foot.hours.1">Mon–Thu: 09:00–20:00</span><br>
+          <span data-i18n="foot.hours.2">Friday: 09:00–15:00</span><br>
+          <span data-i18n="foot.hours.3" style="color:var(--muted)">Sat–Sun: Closed</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span data-i18n="foot.copy">© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
       <span style="color:var(--border)">SST // CND TECHNOLOGY // LONDON</span>
     </div>
   </div>
 </footer>
 
+<script src="js/lang.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

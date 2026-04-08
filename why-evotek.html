@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Why EvoTek | Smart Surface Technology vs Traditional Disinfectants</title>
-  <meta name="description" content="Discover why EvoTek's physics-based Smart Surface Technology outperforms traditional chemical disinfectants — delivering 336-hour protection, 30× cost savings, and zero AMR contribution."/>
+  <title>Why EvoTek | Smart Surface Technology vs Traditional Chemical Treatments</title>
+  <meta name="description" content="Discover why EvoTek's physics-based Smart Surface Technology outperforms traditional chemical surface treatments — delivering 336-hour non-depleting protection, 30× cost savings, and zero AMR contribution."/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="canonical" href="https://www.evotekinnovations.com/why-evotek.html"/>
   <style>
@@ -79,14 +79,19 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="sectors.html" class="nav-link">SECTORS</a>
-      <a href="biomimicry.html" class="nav-link">BIOMIMICRY</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">ABOUT</a>
+      <a href="sectors.html" class="nav-link" data-i18n="nav.sectors">SECTORS</a>
+      <a href="biomimicry.html" class="nav-link" data-i18n="nav.biomimicry">BIOMIMICRY</a>
       <a href="why-evotek.html" class="nav-link active">WHY EVOTEK</a>
-      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
-      <a href="team.html" class="nav-link">TEAM</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="contact.html" class="nav-cta">CONTACT US</a>
+      <a href="claims.html" class="nav-link" data-i18n="nav.claims">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link" data-i18n="nav.team">TEAM</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+        <div class="lang-divider"></div>
+        <button class="lang-btn" onclick="setLang('de')" id="btn-de">DE</button>
+      </div>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -94,14 +99,14 @@
   </div>
 </nav>
 <div id="mobile-nav">
-  <a href="about.html">ABOUT</a>
-  <a href="sectors.html">SECTORS</a>
-  <a href="biomimicry.html">BIOMIMICRY</a>
+  <a href="about.html" data-i18n="nav.about">ABOUT</a>
+  <a href="sectors.html" data-i18n="nav.sectors">SECTORS</a>
+  <a href="biomimicry.html" data-i18n="nav.biomimicry">BIOMIMICRY</a>
   <a href="why-evotek.html" class="active">WHY EVOTEK</a>
-  <a href="claims.html">OUR CLAIMS</a>
-  <a href="team.html">MEET THE TEAM</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="nav-cta">CONTACT US</a>
+  <a href="claims.html" data-i18n="nav.claims">OUR CLAIMS</a>
+  <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
 </div>
 
 <!-- PAGE HERO -->
@@ -163,7 +168,7 @@
   <div class="container">
     <div class="section-header reveal" style="max-width:700px;margin-bottom:48px;">
       <div class="section-label">THE COMPARISON</div>
-      <h2 class="section-title">Smart Surface Technology vs <span class="accent">Traditional</span> Disinfectants</h2>
+      <h2 class="section-title">Smart Surface Technology vs <span class="accent">Traditional</span> Chemical Treatments</h2>
     </div>
 
     <div class="grid-2" style="gap:24px;align-items:start;margin-bottom:40px;">
@@ -185,7 +190,7 @@
 
       <!-- Traditional -->
       <div class="hud-card reveal" style="transition-delay:100ms;border-color:rgba(255,56,100,0.2);background:rgba(255,56,100,0.03);">
-        <div class="chip" style="margin-bottom:22px;border-color:rgba(255,56,100,0.3);color:#FF3864;">TRADITIONAL CHEMICAL DISINFECTANTS</div>
+        <div class="chip" style="margin-bottom:22px;border-color:rgba(255,56,100,0.3);color:#FF3864;">TRADITIONAL CHEMICAL TREATMENTS</div>
         <ul class="versus-list con">
           <li>Efficacy lost within minutes of drying</li>
           <li>Short-lived shock treatment only</li>
@@ -202,13 +207,13 @@
 
     <!-- Explanatory paragraph -->
     <div class="hud-card reveal">
-      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">Smart Surface Technology (SST) is built on continuous, non-depleting material science — new generation, anti-adhesion and anti-biofilm architectures — designed to keep surfaces in a persistently hostile state to microbes without constant reapplication or toxic load. Traditional harsh chemical disinfectants (bleach, peroxides, QAC floods) work as short-lived shock events: they give a momentary kill at the time of use, then rapidly decay, leaving surfaces unprotected, driving material damage, occupational exposure, and adding to AMR pressure when over-used or mis-used. SST, by contrast, provides a background layer of continuous control that reduces bioburden between cleaning cycles, protects infrastructure, and aligns with sustainable hygiene and AMR strategies.</p>
+      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">Smart Surface Technology (SST) is built on continuous, non-depleting material science — new generation, anti-adhesion and anti-biofilm architectures — designed to keep surfaces in a persistently hostile state to microbes without constant reapplication or toxic load. Traditional harsh chemical disinfectants (bleach, peroxides, QAC floods) work as short-lived shock events: they provide a momentary surface effect at the time of use, then rapidly decay, leaving surfaces unprotected, driving material damage, occupational exposure, and adding to AMR pressure when over-used or mis-used. SST, by contrast, provides a background layer of continuous control that reduces bioburden between cleaning cycles, protects infrastructure, and aligns with sustainable hygiene and AMR strategies.</p>
     </div>
 
     <!-- Why SST must augment best practice -->
     <div class="hud-card hud-card-green reveal" style="margin-top:24px;">
       <div class="chip chip-green" style="margin-bottom:16px;">WHY SST MUST AUGMENT BEST PRACTICE</div>
-      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">WHO, CDC and contemporary IPC literature are clear: environmental cleaning, hand hygiene, trained cleaning staff and antimicrobial stewardship remain the foundation of infection prevention and AMR control — not any single product. SST fits exactly into the 'multimodal, multimethod' approach these guidelines call for: it does not replace protocols, but amplifies them by lowering baseline contamination, reducing re-contamination between cleans, and decreasing reliance on repeated high-dose chemical shocks. In NHS and WHO-aligned models, the future is best practice + smart surfaces: trained staff following risk-based cleaning protocols, responsible antibiotic use, and continuous-action SST on high-touch, high-risk surfaces in hospitals, industry and the home. That combination delivers safer environments, supports AMR goals, and moves hygiene from episodic disinfection to sustained, intelligent environmental control.</p>
+      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">WHO, CDC and contemporary IPC literature are clear: environmental cleaning, hand hygiene, trained cleaning staff and antimicrobial stewardship remain the foundation of infection prevention and AMR control — not any single product. SST fits exactly into the 'multimodal, multimethod' approach these guidelines call for: it does not replace protocols, but amplifies them by lowering baseline contamination, reducing re-contamination between cleans, and decreasing reliance on repeated high-dose chemical shocks. In NHS and WHO-aligned models, the future is best practice + smart surfaces: trained staff following risk-based cleaning protocols, responsible antibiotic use, and continuous-action SST on high-touch, high-risk surfaces in hospitals, industry and the home. That combination delivers safer environments, supports AMR goals, and moves hygiene from episodic chemical treatment to sustained, intelligent environmental control.</p>
     </div>
 
   </div>
@@ -224,7 +229,7 @@
       <div class="chip" style="margin-bottom:0;">NOT CHEMISTRY. NOT BIOCIDE.</div>
     </div>
     <div class="hud-card hud-card-green reveal">
-      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">EvoTek's technology operates through physical principles, not chemical toxicity. Instead of relying on poisons, corrosive agents, or reactive biocides, the system uses engineered surface physics to create an environment where microbes simply cannot adhere, survive, or complete their life cycle. The organosilane architecture provides a structural, covalently bonded surface modification, while the photocatalytic layer generates reactive oxygen species (ROS) only at the surface interface, triggered by light and governed by semiconductor physics. These ROS are not 'released chemicals' — they are surface-bound physical reactions, generated and consumed instantly, leaving no residues, no toxicity, and no environmental burden. Because the mechanism is physical — anti-adhesion, surface charge interactions, photocatalytic oxidation, and continuous regeneration — it is not a biocide, does not leach, does not accumulate, and does not drive antimicrobial resistance. The result is a safe, continuous, non-depleting protective surface that aligns with WHO and NHS sustainable hygiene principles: reduce chemical load, minimise AMR pressure, protect infrastructure, and support best-practice cleaning rather than replace it. EvoTek's innovation represents a shift from kill-chemistry to physics-based environmental control, delivering protection that is passive, permanent, and fundamentally safer for people, materials, and the planet.</p>
+      <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">EvoTek's technology operates through physical principles, not chemical toxicity. Instead of relying on poisons, corrosive agents, or reactive biocides, the system uses engineered surface physics to create an environment where microbes simply cannot adhere, survive, or complete their life cycle. The organosilane architecture provides a structural, covalently bonded surface modification, while the photocatalytic layer generates reactive oxygen species (ROS) only at the surface interface, triggered by light and governed by semiconductor physics. These ROS are not 'released chemicals' — they are surface-bound physical reactions, generated and consumed instantly, leaving no residues, no toxicity, and no environmental burden. Because the mechanism is physical — anti-adhesion, surface charge interactions, photocatalytic oxidation, and continuous regeneration — it is not a biocide, does not leach, does not accumulate, and does not drive antimicrobial resistance. The result is a safe, continuous, non-depleting protective surface that aligns with WHO and NHS sustainable hygiene principles: reduce chemical load, minimise AMR pressure, protect infrastructure, and support best-practice cleaning rather than replace it. EvoTek's innovation represents a shift from chemical-dependent surface treatment to physics-based environmental control, delivering protection that is passive, permanent, and fundamentally safer for people, materials, and the planet.</p>
     </div>
   </div>
 </section>
@@ -304,7 +309,7 @@
           <li><a href="why-evotek.html">Why EvoTek</a></li>
           <li><a href="claims.html">Our Claims</a></li>
           <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -330,6 +335,7 @@
   </div>
 </footer>
 
+<script src="js/lang.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
