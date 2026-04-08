@@ -49,6 +49,11 @@
   <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
   <a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+  <div class="lang-switcher" style="margin:16px auto 0;justify-content:center;">
+    <button class="lang-btn active" onclick="setLang('en')" id="mob-btn-en">EN</button>
+    <div class="lang-divider"></div>
+    <button class="lang-btn" onclick="setLang('de')" id="mob-btn-de">DE</button>
+  </div>
 </div>
 
 <!-- HERO -->
@@ -177,48 +182,48 @@
   <div class="container">
     <div class="grid-2" style="gap:60px;align-items:start;">
       <div class="reveal">
-        <div class="section-label">SCIENTIFIC OVERVIEW</div>
-        <h2 class="section-title">Nature's <span class="accent">Way</span></h2>
-        <p class="section-sub" style="margin-bottom:28px;">Biomimicry Behind EvoTek ESP</p>
+        <div class="section-label" data-i18n="nature.label">SCIENTIFIC OVERVIEW</div>
+        <h2 class="section-title" data-i18n-html="nature.title">Nature's <span class="accent">Way</span></h2>
+        <p class="section-sub" style="margin-bottom:28px;" data-i18n="nature.sub">Biomimicry Behind EvoTek ESP</p>
         <div class="nature-intro">
-          <h3>The Principle</h3>
-          <p>EvoTek's Engineered Surface Physics (ESP) platform is grounded in the principles of biomimicry — the practice of studying how nature solves complex problems and translating those solutions into advanced human technologies. Instead of relying on chemicals or biocides, our Smart Surface Technologies replicate the micro-textures, charge patterns, and surface-energy behaviours found throughout the natural world — in sharks, insects, and leaves. These systems stay clean, dry, protected, and resilient without ever releasing toxins, and EvoTek applies the same physics at the molecular scale.</p>
+          <h3 data-i18n="nature.p1.h">The Principle</h3>
+          <p data-i18n="nature.p1.p">EvoTek's Engineered Surface Physics (ESP) platform is grounded in the principles of biomimicry — the practice of studying how nature solves complex problems and translating those solutions into advanced human technologies. Instead of relying on chemicals or biocides, our Smart Surface Technologies replicate the micro-textures, charge patterns, and surface-energy behaviours found throughout the natural world — in sharks, insects, and leaves. These systems stay clean, dry, protected, and resilient without ever releasing toxins, and EvoTek applies the same physics at the molecular scale.</p>
         </div>
         <div class="nature-intro">
-          <h3>The EvoTek Philosophy</h3>
-          <p>Nature's Logic — nature never uses bleach, acids, or toxic chemical treatments. Instead it uses physics — structure, charge, energy, and morphology — to stay clean, protected, and resilient. Our innovations are engineered for modern life and to protect ourselves and our planet. Our ESP platform is the biomimetic evolution of hygiene and material protection: continuous, non-toxic, sustainable, and aligned with the way the natural world has always worked.</p>
+          <h3 data-i18n="nature.p2.h">The EvoTek Philosophy</h3>
+          <p data-i18n="nature.p2.p">Nature's Logic — nature never uses bleach, acids, or toxic chemical treatments. Instead it uses physics — structure, charge, energy, and morphology — to stay clean, protected, and resilient. Our innovations are engineered for modern life and to protect ourselves and our planet. Our ESP platform is the biomimetic evolution of hygiene and material protection: continuous, non-toxic, sustainable, and aligned with the way the natural world has always worked.</p>
         </div>
         <div class="nature-intro">
-          <h3>Our Approach</h3>
-          <p>At EvoTek Innovations, we believe the smartest technologies are the ones nature invented first. From the lotus leaf's self-cleaning surface, to the water-shedding feathers of birds, to the micro-textures that prevent bacteria from settling on shark skin, nature has spent billions of years perfecting sustainable, non-toxic, self-maintaining systems. EvoTek replicates these same physical principles at the molecular scale, creating surfaces that stay cleaner, drier, and more resilient without chemicals, poisons, or environmental burden. This is nature's logic, engineered for modern life: protection through physics, longevity through design, and hygiene through the same mechanisms the natural world has relied on since the beginning of time.</p>
+          <h3 data-i18n="nature.p3.h">Our Approach</h3>
+          <p data-i18n="nature.p3.p">At EvoTek Innovations, we believe the smartest technologies are the ones nature invented first. From the lotus leaf's self-cleaning surface, to the water-shedding feathers of birds, to the micro-textures that prevent bacteria from settling on shark skin, nature has spent billions of years perfecting sustainable, non-toxic, self-maintaining systems. EvoTek replicates these same physical principles at the molecular scale, creating surfaces that stay cleaner, drier, and more resilient without chemicals, poisons, or environmental burden. This is nature's logic, engineered for modern life: protection through physics, longevity through design, and hygiene through the same mechanisms the natural world has relied on since the beginning of time.</p>
         </div>
         <a href="biomimicry.html" class="btn-ghost" style="margin-top:8px;">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          * EXPLORE BIOMIMICRY EXAMPLES
+          <span data-i18n="nature.btn">* EXPLORE BIOMIMICRY EXAMPLES</span>
         </a>
       </div>
       <div class="reveal" style="transition-delay:120ms;">
         <div class="hud-card hud-card-green" style="margin-bottom:24px;">
           <div class="chip chip-green" style="margin-bottom:20px;">ESP PLATFORM</div>
-          <div class="data-row"><span class="data-key">Mechanism</span><span class="data-val">PHYSICS-BASED</span></div>
-          <div class="data-row"><span class="data-key">Inspired By</span><span class="data-val">BIOMIMICRY</span></div>
-          <div class="data-row"><span class="data-key">Chemical Release</span><span class="data-val" style="color:var(--green)">NONE</span></div>
-          <div class="data-row"><span class="data-key">Toxicity</span><span class="data-val" style="color:var(--green)">NONE</span></div>
-          <div class="data-row"><span class="data-key">AMR Contribution</span><span class="data-val" style="color:var(--green)">ZERO</span></div>
-          <div class="data-row"><span class="data-key">Protection Duration</span><span class="data-val">336 HOURS</span></div>
-          <div class="data-row"><span class="data-key">Coverage / Litre</span><span class="data-val">140 m²</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.mech.k">Mechanism</span><span class="data-val" data-i18n="nature.mech.v">PHYSICS-BASED</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.insp.k">Inspired By</span><span class="data-val">BIOMIMICRY</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.chrel.k">Chemical Release</span><span class="data-val" style="color:var(--green)">NONE</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.tox.k">Toxicity</span><span class="data-val" style="color:var(--green)">NONE</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.amr.k">AMR Contribution</span><span class="data-val" style="color:var(--green)">ZERO</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.prot.k">Protection Duration</span><span class="data-val">336 HOURS</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="nature.cov.k">Coverage / Litre</span><span class="data-val">140 m²</span></div>
         </div>
         <div class="hud-card">
           <div class="chip" style="margin-bottom:16px;">BIOLOGICAL INSPIRATIONS</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;">
-            <span class="accred-badge">SHARK SKIN</span>
-            <span class="accred-badge">LOTUS LEAF</span>
-            <span class="accred-badge">GECKO FEET</span>
-            <span class="accred-badge">DRAGONFLY WINGS</span>
-            <span class="accred-badge">BUTTERFLY WINGS</span>
-            <span class="accred-badge">SPIDER SILK</span>
-            <span class="accred-badge">BIRD FEATHERS</span>
-            <span class="accred-badge">CACTUS SKIN</span>
+            <a href="biomimicry.html#bio-shark" class="accred-badge" style="text-decoration:none;cursor:pointer;">SHARK SKIN</a>
+            <a href="biomimicry.html#bio-lotus" class="accred-badge" style="text-decoration:none;cursor:pointer;">LOTUS LEAF</a>
+            <a href="biomimicry.html#bio-gecko" class="accred-badge" style="text-decoration:none;cursor:pointer;">GECKO FEET</a>
+            <a href="biomimicry.html#bio-dragonfly" class="accred-badge" style="text-decoration:none;cursor:pointer;">DRAGONFLY WINGS</a>
+            <a href="biomimicry.html#bio-butterfly" class="accred-badge" style="text-decoration:none;cursor:pointer;">BUTTERFLY WINGS</a>
+            <a href="biomimicry.html#bio-spider" class="accred-badge" style="text-decoration:none;cursor:pointer;">SPIDER SILK</a>
+            <a href="biomimicry.html#bio-bird" class="accred-badge" style="text-decoration:none;cursor:pointer;">BIRD FEATHERS</a>
+            <a href="biomimicry.html#bio-cactus" class="accred-badge" style="text-decoration:none;cursor:pointer;">CACTUS SKIN</a>
           </div>
           <a href="biomimicry.html" style="display:block;margin-top:20px;font-family:var(--font-head);font-size:0.68rem;color:var(--cyan);letter-spacing:0.5px;">* Tap to explore each inspiration →</a>
         </div>
@@ -233,72 +238,72 @@
 <section class="section">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">MECHANISM OF ACTION</div>
-      <h2 class="section-title">How <span class="accent">SST</span> Works</h2>
-      <p class="section-sub">A materials science molecular approach — not a biocide, no active chemicals released. Surfaces become persistently inhospitable to microbial colonisation for 336 hours.</p>
+      <div class="section-label" data-i18n="how.label">MECHANISM OF ACTION</div>
+      <h2 class="section-title" data-i18n-html="how.title">How <span class="accent">SST</span> Works</h2>
+      <p class="section-sub" data-i18n="how.sub">A materials science molecular approach — not a biocide, no active chemicals released. Surfaces become persistently inhospitable to microbial colonisation for 336 hours.</p>
     </div>
     <div class="grid-2" style="gap:48px;align-items:start;">
       <div>
         <div class="step-line reveal">
           <div class="step-num">01</div>
           <div class="step-content">
-            <h3>IMMEDIATE ANTIMICROBIAL ACTIVITY</h3>
-            <p>Disrupts microbial cell membranes on contact — achieving broad-spectrum efficacy against bacteria, viruses, and fungi. Physical disruption, not chemical inhibition.</p>
+            <h3 data-i18n="how.s1.h">IMMEDIATE ANTIMICROBIAL ACTIVITY</h3>
+            <p data-i18n="how.s1.p">Disrupts microbial cell membranes on contact — achieving broad-spectrum efficacy against bacteria, viruses, and fungi. Physical disruption, not chemical inhibition.</p>
           </div>
         </div>
         <div class="step-line reveal" style="transition-delay:80ms">
           <div class="step-num">02</div>
           <div class="step-content">
-            <h3>COVALENT SURFACE BONDING</h3>
-            <p>Organosilane chemistry enables permanent attachment to any substrate — plastics, metals, fabrics, porous surfaces. Forms a non-leaching antimicrobial layer.</p>
+            <h3 data-i18n="how.s2.h">COVALENT SURFACE BONDING</h3>
+            <p data-i18n="how.s2.p">Organosilane chemistry enables permanent attachment to any substrate — plastics, metals, fabrics, porous surfaces. Forms a non-leaching antimicrobial layer.</p>
           </div>
         </div>
         <div class="step-line reveal" style="transition-delay:160ms">
           <div class="step-num">03</div>
           <div class="step-content">
-            <h3>CONTINUOUS NON-DEPLETING PROTECTION</h3>
-            <p>The treated surface remains inhospitable for up to 336 hours. Compatible with standard cleaning — chemical and physical methods can continue as normal.</p>
+            <h3 data-i18n="how.s3.h">CONTINUOUS NON-DEPLETING PROTECTION</h3>
+            <p data-i18n="how.s3.p">The treated surface remains inhospitable for up to 336 hours. Compatible with standard cleaning — chemical and physical methods can continue as normal.</p>
           </div>
         </div>
         <div class="step-line reveal" style="transition-delay:240ms">
           <div class="step-num">04</div>
           <div class="step-content">
-            <h3>RESISTANCE MITIGATION</h3>
-            <p>Physical rupture mechanism reduces AMR risk — no reliance on metabolic inhibition means pathogens cannot develop resistance through genetic adaptation.</p>
+            <h3 data-i18n="how.s4.h">RESISTANCE MITIGATION</h3>
+            <p data-i18n="how.s4.p">Physical rupture mechanism reduces AMR risk — no reliance on metabolic inhibition means pathogens cannot develop resistance through genetic adaptation.</p>
           </div>
         </div>
       </div>
       <div class="reveal" style="transition-delay:160ms">
         <div class="hud-card hud-card-green" style="margin-bottom:24px;">
-          <div class="chip chip-green" style="margin-bottom:20px;">PATHOGEN COVERAGE</div>
+          <div class="chip chip-green" style="margin-bottom:20px;" data-i18n="how.chip1">PATHOGEN COVERAGE</div>
           <div class="data-row">
-            <span class="data-key">Bacteria</span>
+            <span class="data-key" data-i18n="how.bac.k">Bacteria</span>
             <span class="data-val">INHIBITED</span>
           </div>
           <div class="data-row">
-            <span class="data-key">Viruses (incl. SARS-CoV-2)</span>
+            <span class="data-key" data-i18n="how.vir.k">Viruses (incl. SARS-CoV-2)</span>
             <span class="data-val">99.99% REDUCTION</span>
           </div>
           <div class="data-row">
-            <span class="data-key">Fungi</span>
+            <span class="data-key" data-i18n="how.fun.k">Fungi</span>
             <span class="data-val">INHIBITED</span>
           </div>
           <div class="data-row">
-            <span class="data-key">Enveloped Viruses (EN 14476)</span>
+            <span class="data-key" data-i18n="how.env.k">Enveloped Viruses (EN 14476)</span>
             <span class="data-val">ALL STRAINS</span>
           </div>
           <div class="data-row">
-            <span class="data-key">Coronavirus / SARS-CoV-2</span>
+            <span class="data-key" data-i18n="how.cor.k">Coronavirus / SARS-CoV-2</span>
             <span class="data-val">Log4 REDUCTION</span>
           </div>
         </div>
         <div class="hud-card">
-          <div class="chip" style="margin-bottom:20px;">SAFETY PROFILE</div>
-          <div class="data-row"><span class="data-key">Toxicity</span><span class="data-val">NON-TOXIC</span></div>
-          <div class="data-row"><span class="data-key">Food Safety</span><span class="data-val">FOOD-SAFE</span></div>
-          <div class="data-row"><span class="data-key">Biodegradability</span><span class="data-val">EC 648/2004</span></div>
-          <div class="data-row"><span class="data-key">Respiratory</span><span class="data-val">SAFE</span></div>
-          <div class="data-row"><span class="data-key">Drying Time</span><span class="data-val">5–10 MIN</span></div>
+          <div class="chip" style="margin-bottom:20px;" data-i18n="how.chip2">SAFETY PROFILE</div>
+          <div class="data-row"><span class="data-key" data-i18n="how.tox.k">Toxicity</span><span class="data-val">NON-TOXIC</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="how.food.k">Food Safety</span><span class="data-val">FOOD-SAFE</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="how.bio.k">Biodegradability</span><span class="data-val">EC 648/2004</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="how.resp.k">Respiratory</span><span class="data-val">SAFE</span></div>
+          <div class="data-row"><span class="data-key" data-i18n="how.dry.k">Drying Time</span><span class="data-val">5–10 MIN</span></div>
         </div>
       </div>
     </div>
@@ -312,61 +317,61 @@
   <div class="container">
     <div class="section-header section-header-split reveal">
       <div>
-        <div class="section-label">DEPLOYMENT SECTORS</div>
-        <h2 class="section-title">Who <span class="accent">Benefits</span></h2>
+        <div class="section-label" data-i18n="sec.label">DEPLOYMENT SECTORS</div>
+        <h2 class="section-title" data-i18n-html="sec.title">Who <span class="accent">Benefits</span></h2>
       </div>
-      <a href="contact.html" class="btn-ghost">ENQUIRE NOW</a>
+      <a href="contact.html" class="btn-ghost" data-i18n="sec.cta">ENQUIRE NOW</a>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:12px;" class="reveal">
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-        HEALTHCARE
+        <span data-i18n="sec.healthcare">HEALTHCARE</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 3h7v7H3zm0 11h7v7H3zm11-11h7v7h-7zm0 11h7v7h-7z"/></svg>
-        WORKPLACE
+        <span data-i18n="sec.workplace">WORKPLACE</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 9h18v11H3zM7 9V5a5 5 0 0110 0v4"/></svg>
-        HOTELS
+        <span data-i18n="sec.hotels">HOTELS</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        LEISURE
+        <span data-i18n="sec.leisure">LEISURE</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-        ENTERTAINMENT
+        <span data-i18n="sec.ent">ENTERTAINMENT</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-        CATERING
+        <span data-i18n="sec.catering">CATERING</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/><circle cx="18.5" cy="21" r="1.5"/></svg>
-        PUBLIC TRANSPORT
+        <span data-i18n="sec.transport">PUBLIC TRANSPORT</span>
       </span>
       <span class="sector-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-        EDUCATION
+        <span data-i18n="sec.edu">EDUCATION</span>
       </span>
     </div>
 
     <div class="grid-3" style="margin-top:48px;">
       <div class="hud-card reveal" style="transition-delay:0ms">
-        <div class="chip" style="margin-bottom:20px;">HEALTHCARE</div>
-        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;">Infection Prevention</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;">Maintains antimicrobial protection on high-touch surfaces and medical devices. Enhances standard decontamination protocols without disruption.</p>
+        <div class="chip" style="margin-bottom:20px;" data-i18n="sec.c1.chip">HEALTHCARE</div>
+        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;" data-i18n="sec.c1.h">Infection Prevention</h3>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;" data-i18n="sec.c1.p">Maintains antimicrobial protection on high-touch surfaces and medical devices. Enhances standard decontamination protocols without disruption.</p>
       </div>
       <div class="hud-card reveal" style="transition-delay:80ms">
-        <div class="chip chip-green" style="margin-bottom:20px;">FOOD SERVICE</div>
-        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;">Safe Decontamination</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;">Food-safe formulation provides continuous antimicrobial protection without harmful residues. Non-toxic, water-based, naturally biodegradable.</p>
+        <div class="chip chip-green" style="margin-bottom:20px;" data-i18n="sec.c2.chip">FOOD SERVICE</div>
+        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;" data-i18n="sec.c2.h">Safe Decontamination</h3>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;" data-i18n="sec.c2.p">Food-safe formulation provides continuous antimicrobial protection without harmful residues. Non-toxic, water-based, naturally biodegradable.</p>
       </div>
       <div class="hud-card reveal" style="transition-delay:160ms">
-        <div class="chip" style="margin-bottom:20px;">PUBLIC SPACES</div>
-        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;">Community Protection</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;">Practical hygiene solutions for offices, schools, and public transport systems with high footfall and cross-contamination risk.</p>
+        <div class="chip" style="margin-bottom:20px;" data-i18n="sec.c3.chip">PUBLIC SPACES</div>
+        <h3 style="font-family:var(--font-head);font-size:0.9rem;color:var(--text);margin-bottom:10px;" data-i18n="sec.c3.h">Community Protection</h3>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;" data-i18n="sec.c3.p">Practical hygiene solutions for offices, schools, and public transport systems with high footfall and cross-contamination risk.</p>
       </div>
     </div>
   </div>
@@ -379,9 +384,9 @@
   <div class="container">
     <div class="grid-2" style="gap:60px;align-items:center;">
       <div class="reveal">
-        <div class="section-label">STANDARDS &amp; COMPLIANCE</div>
-        <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2.2rem);">Rigorously <span class="accent-green">Certified</span></h2>
-        <p class="section-sub">Independently tested and certified to international standards. Recognised within NHS briefing papers as a candidate technology.</p>
+        <div class="section-label" data-i18n="comp.label">STANDARDS &amp; COMPLIANCE</div>
+        <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2.2rem);" data-i18n-html="comp.title">Rigorously <span class="accent-green">Certified</span></h2>
+        <p class="section-sub" data-i18n="comp.sub">Independently tested and certified to international standards. Recognised within NHS briefing papers as a candidate technology.</p>
       </div>
       <div class="reveal" style="transition-delay:120ms">
         <div class="hud-card">

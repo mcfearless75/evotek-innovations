@@ -279,12 +279,14 @@ function applyLang(lang) {
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
-  // Update switcher button states
+  // Update all switcher button states (desktop + mobile)
   document.querySelectorAll('.lang-btn').forEach(function(btn) {
     btn.classList.remove('active');
   });
-  var activeBtn = document.getElementById('btn-' + lang);
-  if (activeBtn) activeBtn.classList.add('active');
+  ['btn-' + lang, 'mob-btn-' + lang].forEach(function(id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.classList.add('active');
+  });
 
   // Persist + update html lang attribute
   try { localStorage.setItem('evotek-lang', lang); } catch(e) {}

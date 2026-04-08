@@ -119,6 +119,11 @@
   <a href="team.html" data-i18n="nav.team.mob">MEET THE TEAM</a>
   <a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="contact.html" class="nav-cta" data-i18n="nav.contact">CONTACT US</a>
+  <div class="lang-switcher" style="margin:16px auto 0;justify-content:center;">
+    <button class="lang-btn active" onclick="setLang('en')" id="mob-btn-en">EN</button>
+    <div class="lang-divider"></div>
+    <button class="lang-btn" onclick="setLang('de')" id="mob-btn-de">DE</button>
+  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -372,20 +377,35 @@
   (function () {
     var buttons = document.querySelectorAll('.bio-tab-btn');
     var panels = document.querySelectorAll('.bio-panel');
+
+    function activateTab(tabId) {
+      buttons.forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+      var btn = document.querySelector('[data-tab="' + tabId + '"]');
+      var panel = document.getElementById(tabId);
+      if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected', 'true'); }
+      if (panel) {
+        panel.classList.add('active');
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var target = btn.getAttribute('data-tab');
-        buttons.forEach(function (b) {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        panels.forEach(function (p) { p.classList.remove('active'); });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-        var panel = document.getElementById(target);
-        if (panel) panel.classList.add('active');
+        activateTab(btn.getAttribute('data-tab'));
       });
     });
+
+    /* Activate tab from URL hash on load */
+    if (window.location.hash) {
+      var hash = window.location.hash.slice(1);
+      if (document.getElementById(hash)) {
+        setTimeout(function() { activateTab(hash); }, 100);
+      }
+    }
   })();
 </script>
 </body>
