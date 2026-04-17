@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research &amp; Science | EvoTek Innovations | HCAI, AMR &amp; Surface Physics</title>
+  <meta name="description" content="EvoTek's scientific positioning on HCAI and AMR — how engineered surface physics reduces biofilm formation and microbial attachment without biocidal claims, fully compliant with BPR, ECHA, and NHS procurement requirements."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="canonical" href="https://www.evotekinnovations.co.uk/research.html"/>
+  <style>
+    /* ── Inline accent rule ── */
+    .rule-accent {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .rule-accent-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--cyan), transparent);
+    }
+
+    /* ── Key distinction callout ── */
+    .distinction-box {
+      border: 1px solid rgba(0,229,255,0.3);
+      border-left: 4px solid var(--cyan);
+      background: rgba(0,229,255,0.04);
+      border-radius: 0 8px 8px 0;
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+    .distinction-box .distinction-label {
+      font-family: var(--font-head);
+      font-size: 0.6rem;
+      letter-spacing: 2.5px;
+      color: var(--cyan);
+      margin-bottom: 14px;
+    }
+    .distinction-box p {
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.8;
+      font-style: italic;
+      margin: 0;
+    }
+    .distinction-box strong {
+      color: var(--cyan);
+      font-style: normal;
+    }
+
+    /* ── Mechanism list ── */
+    .mechanism-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mechanism-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      transition: border-color 0.25s;
+    }
+    .mechanism-list li:hover { border-color: rgba(0,229,255,0.35); }
+    .mechanism-num {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--cyan);
+      opacity: 0.4;
+      flex-shrink: 0;
+      width: 28px;
+      line-height: 1.4;
+    }
+    .mechanism-text h4 {
+      font-family: var(--font-head);
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .mechanism-text p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ── HCAI driver grid ── */
+    .hcai-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .hcai-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--cyan);
+      border-radius: 0 0 6px 6px;
+      padding: 20px 18px;
+    }
+    .hcai-card h4 {
+      font-family: var(--font-head);
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .hcai-card p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .hcai-card .hcai-break {
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 1.5px;
+      color: var(--green);
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hcai-card .hcai-break::before { content: '→'; }
+
+    /* ── Regulatory compliance table ── */
+    .reg-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .reg-card {
+      background: rgba(0,255,136,0.03);
+      border: 1px solid rgba(0,255,136,0.2);
+      border-radius: 6px;
+      padding: 22px 20px;
+    }
+    .reg-card .reg-no {
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 1.5px;
+      color: var(--green);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .reg-card .reg-no::before { content: '✓'; font-weight: 700; }
+    .reg-card h4 {
+      font-family: var(--font-head);
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .reg-card p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+    .reg-card .reg-arrow {
+      font-size: 0.75rem;
+      color: var(--green);
+      margin-top: 10px;
+      font-family: var(--font-head);
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section divider label ── */
+    .section-rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .section-rule .section-rule-label {
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .section-rule-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Pull quote ── */
+    .pull-quote {
+      text-align: center;
+      padding: 48px 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin: 40px 0;
+    }
+    .pull-quote blockquote {
+      font-family: var(--font-head);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      letter-spacing: 0.5px;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 760px;
+      font-style: normal;
+    }
+    .pull-quote blockquote span { color: var(--cyan); }
+    .pull-quote .pq-source {
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .distinction-box { padding: 20px 20px; }
+      .pull-quote { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/EVO2.png" alt="EvoTek Logo" class="nav-logo-img"/>
+      <div>
+        <span class="nav-logo-name">EVOTEK</span>
+        <span class="nav-logo-sub">INNOVATIONS</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="sectors.html" class="nav-link">SECTORS</a>
+      <a href="biomimicry.html" class="nav-link">BIOMIMICRY</a>
+      <a href="why-evotek.html" class="nav-link">WHY EVOTEK</a>
+      <a href="research.html" class="nav-link active">RESEARCH</a>
+      <a href="claims.html" class="nav-link">OUR CLAIMS</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-cta">CONTACT US</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+        <div class="lang-divider"></div>
+        <button class="lang-btn" onclick="setLang('de')" id="btn-de">DE</button>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <a href="about.html">ABOUT</a>
+  <a href="sectors.html">SECTORS</a>
+  <a href="biomimicry.html">BIOMIMICRY</a>
+  <a href="why-evotek.html">WHY EVOTEK</a>
+  <a href="research.html" class="active">RESEARCH</a>
+  <a href="claims.html">OUR CLAIMS</a>
+  <a href="team.html">MEET THE TEAM</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html" class="nav-cta">CONTACT US</a>
+  <div class="lang-switcher" style="margin:16px auto 0;justify-content:center;">
+    <button class="lang-btn active" onclick="setLang('en')" id="mob-btn-en">EN</button>
+    <div class="lang-divider"></div>
+    <button class="lang-btn" onclick="setLang('de')" id="mob-btn-de">DE</button>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="logo-watermark page-hero-watermark"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      HOME
+    </a>
+    <div class="page-hero-label">SCIENCE &amp; EVIDENCE BASE</div>
+    <h1>Research &amp; <span class="accent">Scientific Positioning</span></h1>
+    <p class="page-hero-sub">Engineered Surface Physics — the scientifically accurate, regulator-safe, and commercially authoritative case for SST in HCAI prevention and AMR reduction.</p>
+  </div>
+</header>
+
+<!-- SECTION 1: THE CORE DISTINCTION -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-rule reveal">
+      <span class="section-rule-label">THE CORE DISTINCTION</span>
+      <div class="section-rule-line"></div>
+    </div>
+
+    <div class="grid-2" style="gap:48px;align-items:start;">
+
+      <div class="reveal">
+        <h2 class="section-title" style="margin-bottom:20px;">Not a Biocide. <span class="accent">A Habitat Remover.</span></h2>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;margin-bottom:20px;">Smart Surface Technologies — when positioned as engineered surface physics — represent a fundamentally different approach to HCAI prevention and AMR control. This distinction is not marketing language: it is the scientific and regulatory truth that defines how SST sits outside biocidal product regulation while delivering significant environmental hygiene value.</p>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.95;">Traditional surface hygiene relies on chemical treatments that attempt to kill organisms present on a surface. SST does not. Instead, it modifies the surface itself — removing the physical and energetic conditions that allow microbes, proteins, and organic residues to anchor, accumulate, and persist. Without a habitat, pathogens cannot persist long enough to transfer or develop resistance.</p>
+      </div>
+
+      <div class="reveal" style="transition-delay:100ms;">
+        <div class="distinction-box">
+          <div class="distinction-label">THE DEFINING PRINCIPLE</div>
+          <p><strong>SST doesn't kill microbes — it prevents the habitat from forming.</strong> That distinction is exactly what keeps EvoTek outside biocidal regulation while still delivering major environmental hygiene value in HCAI and AMR contexts.</p>
+        </div>
+        <div class="hud-card hud-card-green" style="margin-top:20px;">
+          <div class="chip chip-green" style="margin-bottom:18px;">REGULATORY CLASSIFICATION</div>
+          <div class="data-row"><span class="data-key">Kill claims</span><span class="data-val" style="color:var(--green)">NONE</span></div>
+          <div class="data-row"><span class="data-key">BPR / ECHA trigger</span><span class="data-val" style="color:var(--green)">NO</span></div>
+          <div class="data-row"><span class="data-key">EPA / SDS requirement</span><span class="data-val" style="color:var(--green)">NO</span></div>
+          <div class="data-row"><span class="data-key">Chemical mode of action</span><span class="data-val" style="color:var(--green)">NO</span></div>
+          <div class="data-row" style="border-bottom:none;"><span class="data-key">Classification</span><span class="data-val" style="color:var(--green)">MATERIALS ENGINEERING</span></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- SECTION 2: MECHANISM -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-rule reveal">
+      <span class="section-rule-label">WHAT SST ACTUALLY DOES — IN PHYSICS TERMS</span>
+      <div class="section-rule-line"></div>
+    </div>
+
+    <div class="section-header reveal" style="max-width:700px;margin-bottom:40px;">
+      <h2 class="section-title">The Mechanism — <span class="accent">Not Biocidal Terms</span></h2>
+      <p class="section-sub">Five physics-based actions that deliver environmental hygiene outcomes — without claiming kill, control, or chemical activity. This is exactly the mechanism that regulators accept as non-biocidal: physical, passive, and non-leaching.</p>
+    </div>
+
+    <ul class="mechanism-list">
+
+      <li class="reveal">
+        <div class="mechanism-num">01</div>
+        <div class="mechanism-text">
+          <h4>REDUCE SURFACE ENERGY</h4>
+          <p>SST modifies surface energy at the nanoscale so that microbes, proteins, and organic residues cannot anchor or accumulate. Without an energetically favourable attachment site, contamination cannot initiate — the surface simply does not provide the conditions required for settlement.</p>
+        </div>
+      </li>
+
+      <li class="reveal" style="transition-delay:60ms;">
+        <div class="mechanism-num">02</div>
+        <div class="mechanism-text">
+          <h4>PREVENT BIOFILM NUCLEATION</h4>
+          <p>Biofilm formation begins with an initial attachment event — a single organism or protein finding a surface site it can occupy. SST prevents this nucleation step. By denying the critical early foothold, the entire downstream cascade of biofilm development — maturation, dispersal, and resistance gene exchange — is interrupted before it begins.</p>
+        </div>
+      </li>
+
+      <li class="reveal" style="transition-delay:120ms;">
+        <div class="mechanism-num">03</div>
+        <div class="mechanism-text">
+          <h4>INTERRUPT MICROBIAL HABITAT FORMATION</h4>
+          <p>Pathogens rely on surface-based habitats to persist, replicate, and transfer between hosts. SST removes the ecological niche. Without a stable surface environment to occupy, organisms have nowhere to persist long enough to transfer or evolve resistance. The surface becomes an inhospitable substrate — not through toxicity, but through physics.</p>
+        </div>
+      </li>
+
+      <li class="reveal" style="transition-delay:180ms;">
+        <div class="mechanism-num">04</div>
+        <div class="mechanism-text">
+          <h4>MAINTAIN CLEANER, DRIER, LOWER-RESIDUE SURFACES</h4>
+          <p>SST-treated surfaces accumulate significantly less organic matter, moisture, and residue between cleaning cycles. This directly reduces the environmental conditions that support contamination build-up — without making any claim about killing or controlling organisms. The outcome is measurable surface performance: cleaner, drier, lower-contamination environments.</p>
+        </div>
+      </li>
+
+      <li class="reveal" style="transition-delay:240ms;">
+        <div class="mechanism-num">05</div>
+        <div class="mechanism-text">
+          <h4>SUPPORT AMR REDUCTION INDIRECTLY</h4>
+          <p>Antimicrobial resistance spreads partly through environmental reservoirs — surfaces where organisms persist, exchange resistance genes, and evolve under selective pressure from repeated chemical exposure. By removing these surface-based reservoirs and reducing the chemical load applied to surfaces, SST supports AMR reduction strategies indirectly but meaningfully — without contributing the selective pressure that drives resistance.</p>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- SECTION 3: WHY THIS MATTERS FOR HCAI -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-rule reveal">
+      <span class="section-rule-label">WHY THIS MATTERS FOR HCAI AND AMR</span>
+      <div class="section-rule-line"></div>
+    </div>
+
+    <div class="section-header reveal" style="max-width:700px;margin-bottom:12px;">
+      <h2 class="section-title">Breaking the <span class="accent">Transmission Cycle</span></h2>
+      <p class="section-sub">Healthcare-associated infections are not randomly distributed — they are driven by predictable, surface-based mechanisms. SST targets each driver at the source.</p>
+    </div>
+
+    <div class="hcai-grid">
+
+      <div class="hcai-card reveal">
+        <h4>PERSISTENT SURFACE CONTAMINATION</h4>
+        <p>Organic residues and contamination accumulate on untreated surfaces between cleaning cycles, providing the persistence window pathogens need to transfer.</p>
+        <div class="hcai-break">SST removes the accumulation conditions</div>
+      </div>
+
+      <div class="hcai-card reveal" style="transition-delay:60ms;">
+        <h4>BIOFILM RESERVOIRS</h4>
+        <p>Biofilms on plastics, metals, and polymers protect organisms from cleaning agents, providing a resistant reservoir that standard cleaning cannot reliably eliminate.</p>
+        <div class="hcai-break">SST prevents biofilm nucleation</div>
+      </div>
+
+      <div class="hcai-card reveal" style="transition-delay:120ms;">
+        <h4>RECONTAMINATION CYCLES</h4>
+        <p>Hands, equipment, and surfaces exchange contamination in repeated cycles. The surface is the vector that bridges each transfer event.</p>
+        <div class="hcai-break">SST reduces surface as a transfer vector</div>
+      </div>
+
+      <div class="hcai-card reveal" style="transition-delay:180ms;">
+        <h4>ENVIRONMENTAL PERSISTENCE OF AMR</h4>
+        <p>Resistant organisms survive in surface environments, exchanging resistance genes and evolving under chemical pressure — even in clinically cleaned environments.</p>
+        <div class="hcai-break">SST removes the ecological niche</div>
+      </div>
+
+    </div>
+
+    <!-- Pull quote -->
+    <div class="pull-quote reveal">
+      <blockquote>"Smart surfaces break these cycles by removing the <span>surface-based ecological niche</span> that pathogens rely on. This is why hospitals can adopt them freely as procurement choices, not regulated biocides."</blockquote>
+      <div class="pq-source">EVOTEK INNOVATIONS — SCIENTIFIC POSITIONING STATEMENT</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- SECTION 4: REGULATORY POSITIONING -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-rule reveal">
+      <span class="section-rule-label">REGULATORY POSITIONING — FULLY COMPLIANT</span>
+      <div class="section-rule-line"></div>
+    </div>
+
+    <div class="section-header reveal" style="max-width:700px;margin-bottom:12px;">
+      <h2 class="section-title">Global Regulatory <span class="accent">Alignment</span></h2>
+      <p class="section-sub">EvoTek's scientific positioning aligns with the global regulatory reality across GB, EU, and US frameworks. No kill claims means no regulatory burden — hospitals and estates teams can deploy immediately as a procurement decision, not a regulated product approval.</p>
+    </div>
+
+    <div class="reg-grid">
+
+      <div class="reg-card reveal">
+        <div class="reg-no">NO KILL CLAIMS</div>
+        <h4>NO BPR / ECHA SCOPE</h4>
+        <p>Without biocidal-effect claims, SST falls outside the scope of the UK Biocidal Products Regulation and the EU ECHA framework entirely.</p>
+        <div class="reg-arrow">→ No product authorisation required</div>
+      </div>
+
+      <div class="reg-card reveal" style="transition-delay:60ms;">
+        <div class="reg-no">NO CHEMICAL MODE OF ACTION</div>
+        <h4>PHYSICAL SURFACE MODIFICATION</h4>
+        <p>SST is classified as a materials-engineering product. The mechanism is physical, passive, and non-leaching — not chemical activity acting on organisms.</p>
+        <div class="reg-arrow">→ No SDS, no hazard classification</div>
+      </div>
+
+      <div class="reg-card reveal" style="transition-delay:120ms;">
+        <div class="reg-no">NO LEACHING · NO RESIDUES</div>
+        <h4>ZERO HAZARD PROFILE</h4>
+        <p>Because SST does not release substances into the environment, it carries no toxicological, ecotoxicological, or environmental hazard designation.</p>
+        <div class="reg-arrow">→ No EPA registration, no SDS</div>
+      </div>
+
+      <div class="reg-card reveal" style="transition-delay:180ms;">
+        <div class="reg-no">IMMEDIATE DEPLOYMENT</div>
+        <h4>NHS &amp; PUBLIC-SECTOR PROCUREMENT</h4>
+        <p>As a non-hazardous surface technology — not a biocidal product — hospitals, NHS Trusts, and public-sector estates can adopt SST freely through standard procurement channels.</p>
+        <div class="reg-arrow">→ No approval pathway, no waiting</div>
+      </div>
+
+    </div>
+
+    <!-- Compliance summary card -->
+    <div class="hud-card hud-card-green reveal" style="margin-top:32px;">
+      <div class="chip chip-green" style="margin-bottom:20px;">COMPLIANCE SUMMARY</div>
+      <div class="grid-2" style="gap:32px;align-items:start;">
+        <div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.9;margin-bottom:0;">EvoTek's positioning is built on a single, clear scientific principle: SST modifies surfaces through engineered physics, not through chemical or biological action. This principle — consistently applied across all claims, all pages, and all commercial communications — is what keeps the product outside biocidal regulation globally, while still delivering genuine, evidenced hygiene value in clinical, industrial, and domestic environments.</p>
+        </div>
+        <div>
+          <div class="data-row"><span class="data-key">GB Biocidal Products Regulation</span><span class="data-val" style="color:var(--green)">OUT OF SCOPE</span></div>
+          <div class="data-row"><span class="data-key">EU ECHA / BPR</span><span class="data-val" style="color:var(--green)">OUT OF SCOPE</span></div>
+          <div class="data-row"><span class="data-key">US EPA Registration</span><span class="data-val" style="color:var(--green)">NOT REQUIRED</span></div>
+          <div class="data-row"><span class="data-key">SDS / Hazard Sheet</span><span class="data-val" style="color:var(--green)">NOT REQUIRED</span></div>
+          <div class="data-row"><span class="data-key">NHS Procurement Route</span><span class="data-val" style="color:var(--green)">STANDARD</span></div>
+          <div class="data-row" style="border-bottom:none;"><span class="data-key">AMR Contribution</span><span class="data-val" style="color:var(--green)">ZERO</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="logo-watermark cta-logo-watermark"></div>
+      <div class="chip" style="margin:0 auto 20px;">WORK WITH US</div>
+      <h2>Want the Full <span style="color:var(--cyan)">Scientific Brief?</span></h2>
+      <p>Contact our team for a detailed technical briefing on SST deployment, compliance documentation, and NHS procurement support.</p>
+      <div class="btns">
+        <a href="contact.html" class="btn-primary">SPEAK WITH OUR TEAM</a>
+        <a href="why-evotek.html" class="btn-ghost">WHY EVOTEK</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="position:relative;overflow:hidden;">
+  <div class="logo-watermark footer-logo-watermark"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
+        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <span class="accred-badge">NHS SUPPLY PARTNER</span>
+          <span class="accred-badge">ISO 9001</span>
+          <span class="accred-badge">ISO 14001</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">NAVIGATION</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">SECTORS</div>
+        <ul class="footer-links">
+          <li><a href="sectors.html#wellness">Wellness &amp; Beauty</a></li>
+          <li><a href="sectors.html#public">Public &amp; Industrial</a></li>
+          <li><a href="sectors.html#retail">Retail &amp; Domestic</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">CONTACT</div>
+        <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
+        <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
+        <div class="footer-contact-item" style="margin-top:16px;font-size:0.7rem;letter-spacing:1px;">Mon–Thu: 09:00–20:00<br>Friday: 09:00–15:00</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span style="color:var(--border)">ESP // SST // LONDON</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
