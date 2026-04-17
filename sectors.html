@@ -4,9 +4,216 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sectors &amp; Applications | EvoTek Innovations | Smart Surface Technology</title>
-  <meta name="description" content="EvoTek's Smart Surface Technology deployed across healthcare, hospitality, transport, education, food service, and 15+ sectors. Continuous non-toxic protection everywhere people gather."/>
+  <meta name="description" content="EvoTek Smart Surface Technology deployed across wellness &amp; beauty, public infrastructure, industrial, and retail &amp; domestic markets. Non-toxic, physics-based surface protection."/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="canonical" href="https://www.evotekinnovations.co.uk/sectors.html"/>
+  <style>
+    /* ── Pillar navigation ── */
+    .pillar-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    .pillar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-family: var(--font-head);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+    .pillar-btn:hover,
+    .pillar-btn.active {
+      border-color: var(--cyan);
+      color: var(--cyan);
+      background: rgba(0,229,255,0.05);
+    }
+    .pillar-btn .pillar-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* ── Sector pillar heading ── */
+    .pillar-heading {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .pillar-heading-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Sub-sector grid ── */
+    .subsector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .subsector-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .subsector-card:hover {
+      border-color: rgba(0,229,255,0.35);
+      transform: translateY(-3px);
+    }
+    .subsector-card.card-green {
+      border-color: rgba(0,255,136,0.2);
+      background: rgba(0,255,136,0.03);
+    }
+    .subsector-card.card-green:hover {
+      border-color: rgba(0,255,136,0.5);
+    }
+    .subsector-card h3 {
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      color: var(--text);
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .app-benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .app-benefits-grid h4 {
+      font-family: var(--font-head);
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      color: var(--cyan);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .mini-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .mini-list li {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.7;
+      padding: 3px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .mini-list li::before {
+      content: '·';
+      color: var(--cyan);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .mini-list.green li::before {
+      content: '✓';
+      color: var(--green);
+      font-size: 0.65rem;
+      margin-top: 2px;
+    }
+
+    /* ── Pillar intro card ── */
+    .pillar-intro {
+      border-left: 3px solid var(--cyan);
+      padding: 24px 28px;
+      background: rgba(0,229,255,0.03);
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 8px;
+    }
+    .pillar-intro.green-border {
+      border-left-color: var(--green);
+      background: rgba(0,255,136,0.03);
+    }
+    .pillar-intro p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.9;
+      margin: 0;
+    }
+    .pillar-intro .why-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .why-tag {
+      font-family: var(--font-head);
+      font-size: 0.6rem;
+      letter-spacing: 1.5px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--muted);
+    }
+
+    /* ── Universal message box ── */
+    .universal-msg {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--cyan);
+      padding: 28px 32px;
+      border-radius: 0 0 8px 8px;
+      margin-top: 32px;
+      text-align: center;
+    }
+    .universal-msg blockquote {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0 0 16px;
+      font-style: normal;
+    }
+    .philosophy-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .phi-tag {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--font-head);
+      font-size: 0.62rem;
+      letter-spacing: 1.5px;
+      color: var(--green);
+      padding: 6px 14px;
+      border: 1px solid rgba(0,255,136,0.2);
+      border-radius: 4px;
+      background: rgba(0,255,136,0.04);
+    }
+    .phi-tag::before { content: '✓'; font-weight: 700; }
+
+    @media (max-width: 600px) {
+      .app-benefits-grid { grid-template-columns: 1fr; gap: 14px; }
+      .subsector-grid { grid-template-columns: 1fr; }
+      .pillar-intro { padding: 18px 20px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -41,7 +248,7 @@
 </nav>
 <div id="mobile-nav">
   <a href="about.html" data-i18n="nav.about">ABOUT</a>
-  <a href="sectors.html" data-i18n="nav.sectors">SECTORS</a>
+  <a href="sectors.html" class="active">SECTORS</a>
   <a href="biomimicry.html" data-i18n="nav.biomimicry">BIOMIMICRY</a>
   <a href="why-evotek.html" data-i18n="nav.why">WHY EVOTEK</a>
   <a href="claims.html" data-i18n="nav.claims">OUR CLAIMS</a>
@@ -55,186 +262,683 @@
   <div class="logo-watermark page-hero-watermark"></div>
   <div class="hero-grid-bg"></div>
   <div class="container">
-    <a href="index.html" data-i18n="nav.home" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:0.65rem;letter-spacing:2px;color:var(--muted);margin-bottom:24px;transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--muted)'">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
       HOME
     </a>
-    <div class="page-hero-label" data-i18n="sectors.hero.label">WHERE SST WORKS</div>
-    <h1 data-i18n-html="sectors.hero.h1">Sectors &amp; <span class="accent">Applications</span></h1>
-    <p class="page-hero-sub" data-i18n="sectors.hero.sub">Engineered Surface Physics deployed across every environment where people live, work, and gather.</p>
+    <div class="page-hero-label">WHERE SST WORKS</div>
+    <h1>Sectors &amp; <span class="accent">Applications</span></h1>
+    <p class="page-hero-sub">Three distinct market pillars — one physics-based platform. Engineered Surface Physics deployed wherever surfaces must stay cleaner, longer.</p>
   </div>
 </header>
 
-<!-- SECTOR TAGS QUICK NAV -->
-<section class="section-sm">
+<!-- PILLAR QUICK NAV -->
+<section class="section-sm" style="padding-bottom:0;">
   <div class="container">
-    <div class="reveal" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
-      <span class="sector-tag" data-i18n="sectors.tag1">HEALTH &amp; SOCIAL CARE</span>
-      <span class="sector-tag" data-i18n="sectors.tag2">HOME &amp; FAMILY</span>
-      <span class="sector-tag" data-i18n="sectors.tag3">NURSING HOMES</span>
-      <span class="sector-tag" data-i18n="sectors.tag4">ESTATES &amp; FM</span>
-      <span class="sector-tag" data-i18n="sectors.tag5">OFFICES</span>
-      <span class="sector-tag" data-i18n="sectors.tag6">CONSTRUCTION</span>
-      <span class="sector-tag" data-i18n="sectors.tag7">MANUFACTURING</span>
-      <span class="sector-tag" data-i18n="sectors.tag8">FOOD &amp; CATERING</span>
-      <span class="sector-tag" data-i18n="sectors.tag9">TRANSPORT</span>
-      <span class="sector-tag" data-i18n="sectors.tag10">HOSPITALITY</span>
-      <span class="sector-tag" data-i18n="sectors.tag11">EDUCATION</span>
-      <span class="sector-tag" data-i18n="sectors.tag12">SPORTS &amp; FITNESS</span>
-      <span class="sector-tag" data-i18n="sectors.tag13">OUTDOORS</span>
-      <span class="sector-tag" data-i18n="sectors.tag14">FASHION &amp; SPORTSWEAR</span>
-    </div>
-  </div>
-</section>
-
-<!-- INTRO -->
-<section class="section">
-  <div class="container">
-    <div class="reveal" style="max-width:820px;margin:0 auto;text-align:center;">
-      <p style="font-size:1rem;color:var(--muted);line-height:1.9;" data-i18n="sectors.intro.p">EvoTek's Smart Surface Technology (SST) is a universal platform — the same physics-driven Engineered Surface Physics (ESP) that protects an NHS ward also protects a family home, a hotel lobby, a gym changing room, or a fleet of buses. Wherever surfaces exist, SST delivers continuous, non-toxic, sustainable protection.</p>
+    <div class="pillar-nav reveal">
+      <a href="#wellness" class="pillar-btn">
+        <span class="pillar-dot"></span>
+        WELLNESS &amp; BEAUTY
+      </a>
+      <a href="#public" class="pillar-btn">
+        <span class="pillar-dot"></span>
+        PUBLIC &amp; INDUSTRIAL
+      </a>
+      <a href="#retail" class="pillar-btn">
+        <span class="pillar-dot"></span>
+        RETAIL &amp; DOMESTIC
+      </a>
     </div>
   </div>
 </section>
 
 <div class="sep"></div>
 
-<!-- ALL SECTORS ACCORDION -->
-<section class="section">
+<!-- ═══════════════════════════════════════════════════════════
+     PILLAR 1 — WELLNESS, BEAUTY & PERSONAL CARE
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="wellness">
   <div class="container">
 
-    <!-- GROUP: HEALTH & CARE -->
-    <div class="section-label reveal" style="margin-bottom:24px;" data-i18n="sectors.grp1.label">HEALTH &amp; CARE</div>
-
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s1.q">Health &amp; Social Care</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s1.a">EvoTek's Smart Surface Technology (SST) delivers continuous protection for up to 336 hours between applications, dramatically reducing the cleaning hours, labour pressure, and chemical consumption normally required to maintain safe care environments. Because SST works through Engineered Surface Physics (ESP) rather than harsh chemistry, each application delivers up to 30× more value than traditional chemical treatments, which are toxic, short-lived, and lose efficacy within minutes of drying. Our physics-enhanced surface characteristics create environments that actively resist staining, repel liquids, and minimise the adhesion of residues and biofilm-forming deposits. By keeping surfaces cleaner, drier, and less favourable to microbial settlement, SST reduces odours linked to organic build-up, incontinence, footwear, and high-traffic clinical areas — supporting safer, fresher, and more dignified care settings without chemical release or corrosive agents. This is the future of hygiene: continuous, non-toxic, sustainable protection that strengthens best-practice cleaning and reduces the environmental conditions associated with disease transmission and AMR.</div>
+    <!-- Pillar heading -->
+    <div class="pillar-heading reveal">
+      <div class="section-label" style="white-space:nowrap;">PILLAR 01</div>
+      <div class="pillar-heading-line"></div>
+    </div>
+    <div class="section-header reveal" style="max-width:720px;margin-bottom:32px;">
+      <h2 class="section-title">Wellness, Beauty &amp; <span class="accent">Personal Care</span></h2>
+      <p class="section-sub">One of the strongest commercial verticals for SST — cleanliness, hygiene, odour control, and surface appearance are the foundations of client trust in these environments.</p>
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:40ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s2.q">Nursing Homes &amp; Assistive Living</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s2.a">In care environments, EvoTek SST delivers 336 hours of continuous protection, reducing cleaning man-hours, labour strain, and chemical consumption by up to 30×. Applied via fine-mist atomisation, SST covers large areas quickly and economically, creating surfaces that repel spills, resist staining, and prevent the build-up of odours linked to incontinence, bedding, footwear, and shared spaces. The self-cleaning behaviour supports consistent hygiene between scheduled cleans while extending the lifespan of furnishings and equipment. This is a non-biocidal, resident-safe, dignity-enhancing approach to care-home hygiene.</div>
+    <!-- Intro card -->
+    <div class="pillar-intro reveal" style="margin-bottom:40px;">
+      <p>These environments share the same challenges — and SST solves them all without chemicals, without biocides, and without regulatory baggage. It simply prevents residue, oils, moisture, and contamination from anchoring to surfaces, keeping them cleaner, fresher, and easier to maintain naturally.</p>
+      <div class="why-list">
+        <span class="why-tag">HIGH CUSTOMER TURNOVER</span>
+        <span class="why-tag">HIGH TOUCH-SURFACES</span>
+        <span class="why-tag">MOISTURE · OILS · RESIDUES</span>
+        <span class="why-tag">ODOUR BUILD-UP</span>
+        <span class="why-tag">STRICT HYGIENE EXPECTATIONS</span>
+        <span class="why-tag">REPUTATIONAL RISK</span>
+      </div>
     </div>
 
-    <!-- GROUP: HOME & LIVING -->
-    <div class="section-label reveal" style="margin-top:48px;margin-bottom:24px;" data-i18n="sectors.grp2.label">HOME &amp; LIVING</div>
+    <!-- Sub-sector cards -->
+    <div class="subsector-grid">
 
-    <div class="faq-item reveal" style="transition-delay:40ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s3.q">Family Safety, Cleanliness &amp; Home Hygiene</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s3.a">For families, SST brings hospital-grade surface protection into everyday life — but without chemicals, fumes, or risks. By modifying surface behaviour at the molecular level, our ESP-based coatings keep household surfaces cleaner for longer, reduce odours, prevent staining, and make kitchens, bathrooms, bedrooms, and children's spaces easier to maintain. This is proactive home hygiene: safer for children, pets, and allergy-sensitive individuals, while reducing reliance on harsh cleaning products. SST creates a healthier living environment by lowering the surface conditions that support microbial spread, giving families a cleaner, fresher, and more protected home — continuously.</div>
+      <!-- Wellness & Spas -->
+      <div class="subsector-card reveal">
+        <h3>WELLNESS CENTRES &amp; SPAS</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surfaces exposed to oils, lotions, steam, and moisture benefit massively from SST's anti-adhesion properties.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Treatment beds</li>
+              <li>Massage tables</li>
+              <li>Trolleys &amp; equipment</li>
+              <li>Steam-room &amp; sauna</li>
+              <li>Changing rooms</li>
+              <li>Lockers &amp; benches</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Resists oils and lotions</li>
+              <li>Reduces odour build-up</li>
+              <li>Fresher surfaces between clients</li>
+              <li>Reduces cleaning time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hair Salons -->
+      <div class="subsector-card card-green reveal" style="transition-delay:60ms;">
+        <h3>HAIR SALONS</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Dyes, oils, sprays, heat, and constant touch — SST keeps surfaces professional and pristine.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Styling chairs</li>
+              <li>Backwash units</li>
+              <li>Worktops &amp; trolleys</li>
+              <li>Mirrors &amp; glass</li>
+              <li>Reception areas</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Resists dye staining</li>
+              <li>Reduces smearing &amp; residue</li>
+              <li>Cleaner high-touch areas</li>
+              <li>Enhanced professional look</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nail Bars -->
+      <div class="subsector-card reveal" style="transition-delay:120ms;">
+        <h3>NAIL BARS</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Among the highest contamination loads from dust, filings, gels, and solvents — SST makes surfaces wipe-clean instantly.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Nail desks</li>
+              <li>Lamps &amp; tool housings</li>
+              <li>Chairs &amp; armrests</li>
+              <li>Reception counters</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Prevents dust adhesion</li>
+              <li>Reduces gel &amp; polish staining</li>
+              <li>Instant wipe-clean behaviour</li>
+              <li>Visibly hygienic environment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tattoo Parlours -->
+      <div class="subsector-card card-green reveal" style="transition-delay:180ms;">
+        <h3>TATTOO PARLOURS</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Studios require clinical-grade appearance without clinical harshness — SST delivers both.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Tattoo beds &amp; armrests</li>
+              <li>Workstations</li>
+              <li>Equipment housings</li>
+              <li>Waiting-area surfaces</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces ink staining</li>
+              <li>Surfaces visibly clean</li>
+              <li>Hygiene expectations met</li>
+              <li>Odour &amp; residue reduction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gyms -->
+      <div class="subsector-card reveal" style="transition-delay:240ms;">
+        <h3>GYMNASIUMS &amp; FITNESS CENTRES</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">High-traffic, high-touch, high-moisture — the perfect environment for SST's continuous surface protection.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Equipment handles</li>
+              <li>Benches &amp; mats</li>
+              <li>Changing rooms</li>
+              <li>Lockers</li>
+              <li>Water fountains</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces sweat residue</li>
+              <li>Minimises odour retention</li>
+              <li>Cleaner equipment between uses</li>
+              <li>Lower cleaning burden</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:80ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s4.q">Your Home</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s4.a">EvoTek SST transforms everyday living spaces into cleaner, safer, fresher environments without chemical release, fragrances, or toxic agents. Our ESP-engineered coatings deliver stain-proofing, water-repellency, and self-cleaning behaviour, preventing the build-up of residues that cause odours from pets, cooking, smoke, footwear, and soft furnishings. By keeping surfaces drier and less adhesive, SST reduces the conditions that support microbial spread while extending the life of household materials. This is continuous, preventative home hygiene that protects families, saves money, and keeps living spaces healthier — all through pure physics.</div>
+    <!-- Universal message -->
+    <div class="universal-msg reveal">
+      <blockquote>"SST keeps surfaces cleaner, fresher, and more hygienic-looking — without chemicals, without biocides, and without changing how staff clean. It simply prevents residue, odour, and contamination from taking hold."</blockquote>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:20px;">This is exactly what wellness and beauty businesses want — a natural, responsible, effortless upgrade to their environment.</p>
+      <div class="philosophy-grid">
+        <span class="phi-tag">NATURAL — NO CHEMICALS</span>
+        <span class="phi-tag">SAFE FOR SKIN-CONTACT SURFACES</span>
+        <span class="phi-tag">SUSTAINABLE</span>
+        <span class="phi-tag">AESTHETIC — SURFACES STAY NEW</span>
+        <span class="phi-tag">TRUST-BUILDING</span>
+      </div>
     </div>
 
-    <!-- GROUP: COMMERCIAL & INDUSTRIAL -->
-    <div class="section-label reveal" style="margin-top:48px;margin-bottom:24px;" data-i18n="sectors.grp3.label">COMMERCIAL &amp; INDUSTRIAL</div>
+  </div>
+</section>
 
-    <div class="faq-item reveal" style="transition-delay:40ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s5.q">Estates &amp; Facilities Management</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s5.a">For estates teams, EvoTek SST is a profitability multiplier. With up to 140 m² coverage per litre and 336-hour efficacy, SST reduces cleaning cycles, labour hours, and chemical inventory costs. Our ESP-based coatings deliver stain resistance, waterproofing, UV protection, and odour reduction by preventing moisture, residues, and organic films from accumulating. This keeps corridors, washrooms, changing areas, and communal spaces fresher while extending material lifecycles and lowering maintenance budgets. SST is a capital-preserving, labour-saving, sustainability-aligned upgrade for every estate.</div>
+<div class="sep"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PILLAR 2 — PUBLIC, INDUSTRIAL & LARGE-SCALE
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="public">
+  <div class="container">
+
+    <!-- Pillar heading -->
+    <div class="pillar-heading reveal">
+      <div class="section-label" style="white-space:nowrap;">PILLAR 02</div>
+      <div class="pillar-heading-line"></div>
+    </div>
+    <div class="section-header reveal" style="max-width:720px;margin-bottom:32px;">
+      <h2 class="section-title">Public, Industrial &amp; <span class="accent">Large-Scale</span></h2>
+      <p class="section-sub">SST scales anywhere large infrastructures depend on surfaces that must stay clean, stable, low-maintenance, and resistant to fouling, wear, or contamination.</p>
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:80ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s6.q">Office Spaces &amp; Commercial Buildings</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s6.a">In offices and commercial buildings, EvoTek SST reduces operational cleaning costs and frees up valuable labour hours. With 336-hour continuous efficacy and 140 m² per litre coverage, SST keeps workspaces cleaner for longer by repelling spills, reducing staining, and minimising odours from footwear, food, smoke, and high-touch areas. The self-cleaning behaviour enhances workspace appearance, reduces cleaning frequency, and supports healthier, fresher environments for staff and visitors.</div>
+    <!-- Intro card -->
+    <div class="pillar-intro green-border reveal" style="margin-bottom:40px;">
+      <p>The scientific literature strongly supports surface-modification technologies in medical, industrial, environmental, and high-performance engineering sectors — which directly maps onto SST's capabilities. Across all sectors the core idea is the same: surface modification improves performance, reduces fouling, and enhances biological, mechanical, and environmental stability. SST occupies this domain with the advantage of being non-biocidal, passive, and regulator-safe.</p>
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:120ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s7.q">Construction &amp; Buildings — Materials</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s7.a">EvoTek's polymeric matrices upgrade construction materials with stain resistance, water-repellency, UV stability, and ESC protection. By preventing moisture and residue build-up, SST reduces odours in new builds, refurbishments, void properties, and damp-prone areas. It also extends the lifespan of surfaces, coatings, and substrates — reducing callbacks, maintenance costs, and long-term degradation. This is future-proofing built into the material itself.</div>
+    <!-- Sub-sector cards -->
+    <div class="subsector-grid">
+
+      <!-- Healthcare -->
+      <div class="subsector-card card-green reveal">
+        <h3>HEALTHCARE &amp; CLINICAL INFRASTRUCTURE</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surface modification is widely applied in clinical environments to reduce contamination, improve material compatibility, and prevent fouling.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Hospital wards &amp; theatres</li>
+              <li>Bed rails &amp; trolleys</li>
+              <li>Equipment housings</li>
+              <li>Waiting areas &amp; reception</li>
+              <li>Ambulances &amp; mobile units</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduced residue build-up</li>
+              <li>Extended material lifespan</li>
+              <li>Lower chemical dependency</li>
+              <li>Supports AMR strategies</li>
+              <li>NHS-aligned philosophy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Public Sector Estates -->
+      <div class="subsector-card reveal" style="transition-delay:60ms;">
+        <h3>PUBLIC-SECTOR ESTATES &amp; INFRASTRUCTURE</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surface engineering is recognised as a key method for improving stability, reliability, and service life across demanding estate environments.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Local authority buildings</li>
+              <li>Schools &amp; universities</li>
+              <li>Transport hubs</li>
+              <li>MOD &amp; civic facilities</li>
+              <li>Prisons &amp; courts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces fouling &amp; residue</li>
+              <li>Lowers maintenance burden</li>
+              <li>Extends asset lifespan</li>
+              <li>30× cost saving vs chemicals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial -->
+      <div class="subsector-card card-green reveal" style="transition-delay:120ms;">
+        <h3>INDUSTRIAL &amp; MANUFACTURING</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surface engineering is essential for improving performance under extreme conditions — high temperature, pressure, friction, or contamination.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Production lines &amp; conveyors</li>
+              <li>Robotics housings</li>
+              <li>Food-processing surfaces</li>
+              <li>Packaging machinery</li>
+              <li>Cleanrooms</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces oils &amp; particulates</li>
+              <li>Cuts odours &amp; residues</li>
+              <li>Improved cleanability</li>
+              <li>No chemical hazard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Environmental -->
+      <div class="subsector-card reveal" style="transition-delay:180ms;">
+        <h3>ENVIRONMENTAL &amp; WASTE MANAGEMENT</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Antifouling and hydrophobic enhancements improve environmental performance and reduce odour at scale.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Waste-handling equipment</li>
+              <li>Recycling centres</li>
+              <li>Water-treatment infrastructure</li>
+              <li>Air-handling &amp; ducting</li>
+              <li>Public bins &amp; caddies</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduced residue &amp; fouling</li>
+              <li>Significant odour reduction</li>
+              <li>Lower maintenance cycles</li>
+              <li>Improved surface durability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transport -->
+      <div class="subsector-card card-green reveal" style="transition-delay:240ms;">
+        <h3>TRANSPORT &amp; AUTOMOTIVE</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surface engineering used to improve durability and reduce contamination in high-use mechanical systems maps directly to fleet and public transport.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Buses, trains &amp; trams</li>
+              <li>Fleet vehicles</li>
+              <li>Aircraft interiors</li>
+              <li>Marine vessels</li>
+              <li>EV charging stations</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces grime &amp; fouling</li>
+              <li>Lower cleaning labour</li>
+              <li>Extended material life</li>
+              <li>Improved passenger experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- High-Performance Engineering -->
+      <div class="subsector-card reveal" style="transition-delay:300ms;">
+        <h3>HIGH-PERFORMANCE ENGINEERING</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Deep sea, aerospace, and extreme industrial conditions — surface engineering is essential for performance and longevity.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Offshore platforms</li>
+              <li>Wind turbines</li>
+              <li>Aerospace interiors</li>
+              <li>Mining &amp; heavy industry</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Resists fouling &amp; corrosion</li>
+              <li>Contamination resistance</li>
+              <li>Durability in extremes</li>
+              <li>Lifecycle extension</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical Devices -->
+      <div class="subsector-card card-green reveal" style="transition-delay:360ms;">
+        <h3>MEDICAL DEVICES &amp; EQUIPMENT</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Surface modification is heavily used to improve biomaterial performance and enhance material compatibility — SST provides physics-based, non-biocidal enhancements.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Device housings</li>
+              <li>External-contact components</li>
+              <li>Non-implantable equipment</li>
+              <li>Diagnostic devices</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduced residue adhesion</li>
+              <li>Easier surface maintenance</li>
+              <li>No chemical release</li>
+              <li>Material longevity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large-scale commercial -->
+      <div class="subsector-card reveal" style="transition-delay:420ms;">
+        <h3>LARGE-SCALE COMMERCIAL &amp; RETAIL</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Supermarkets, hospitality, leisure, and food-service environments all benefit from surfaces that stay cleaner for longer with reduced chemical use.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Supermarkets &amp; retail chains</li>
+              <li>Hotels &amp; hospitality</li>
+              <li>Food-service environments</li>
+              <li>Gyms, spas &amp; leisure</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Surfaces cleaner for longer</li>
+              <li>Reduced chemical load</li>
+              <li>Lower operational costs</li>
+              <li>Enhanced customer experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:160ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s8.q">Manufacturing &amp; Industrial Settings</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s8.a">In industrial environments, EvoTek SST delivers up to 30× cost savings by reducing cleaning cycles, chemical use, and downtime. Our coatings repel oils, residues, and particulates, cutting odours associated with machinery, footwear, and industrial processes. The stain-resistant, waterproof, self-cleaning behaviour improves cleanability, enhances material resilience, and eliminates chemical hazards or regulatory burdens. SST is a productivity-boosting, asset-protecting upgrade for any industrial workflow.</div>
+    <!-- Synthesis box -->
+    <div class="universal-msg reveal" style="border-top-color:var(--green);">
+      <blockquote>"Surface modification improves performance, reduces fouling, and enhances biological, mechanical, and environmental stability — SST occupies this domain with the advantage of being non-biocidal, passive, and regulator-safe."</blockquote>
+      <div class="philosophy-grid">
+        <span class="phi-tag">NHS SUPPLY PARTNER</span>
+        <span class="phi-tag">ZERO AMR CONTRIBUTION</span>
+        <span class="phi-tag">NO SDS REQUIRED</span>
+        <span class="phi-tag">ISO 9001 · ISO 14001</span>
+        <span class="phi-tag">30× COST ADVANTAGE</span>
+      </div>
     </div>
 
-    <!-- GROUP: FOOD, TRANSPORT & LEISURE -->
-    <div class="section-label reveal" style="margin-top:48px;margin-bottom:24px;" data-i18n="sectors.grp4.label">FOOD, TRANSPORT &amp; LEISURE</div>
+  </div>
+</section>
 
-    <div class="faq-item reveal" style="transition-delay:40ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s9.q">Food Preparation &amp; Catering</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s9.a">EvoTek SST repels oils, fats, and organic residues, reducing odours from food handling, grease, smoke, and waste areas. With stain resistance, self-cleaning behaviour, and zero chemical release, SST supports high hygiene standards while keeping surfaces fresher and easier to maintain. The result: lower surface treatment costs, fewer labour hours, and cleaner kitchens that stay hygienic between cleans.</div>
+<div class="sep"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PILLAR 3 — RETAIL & DOMESTIC
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="retail">
+  <div class="container">
+
+    <!-- Pillar heading -->
+    <div class="pillar-heading reveal">
+      <div class="section-label" style="white-space:nowrap;">PILLAR 03</div>
+      <div class="pillar-heading-line"></div>
+    </div>
+    <div class="section-header reveal" style="max-width:720px;margin-bottom:32px;">
+      <h2 class="section-title">Retail &amp; <span class="accent">Domestic</span></h2>
+      <p class="section-sub">SST translates into retail and domestic markets by doing exactly what consumers already want — keeping surfaces cleaner for longer, using no chemicals, no biocides, and no effort. A material upgrade, not a cleaning product.</p>
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:80ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s10.q">Transport &amp; Public Mobility</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s10.a">Across transport fleets, EvoTek SST provides stain resistance, water-repellency, and odour reduction by preventing the build-up of residues from footwear, food, smoke, pets, and high passenger turnover. This improves cleanability, enhances passenger experience, and extends material life across buses, trains, taxis, aviation, and marine environments. SST also reduces disinfection costs and cleaning man-hours, delivering fleet-wide operational savings.</div>
+    <!-- Intro card -->
+    <div class="pillar-intro reveal" style="margin-bottom:40px;">
+      <p>Consumers already value less cleaning effort, fewer chemicals at home, safer surfaces for children and pets, odour reduction, longer-lasting cleanliness, and sustainability. SST delivers all of these without claiming kill, disinfection, or any active chemical action. It simply prevents the build-up that causes dirt, odour, staining, and contamination. That is the perfect retail message.</p>
+      <div class="why-list">
+        <span class="why-tag">LESS CLEANING EFFORT</span>
+        <span class="why-tag">FEWER CHEMICALS AT HOME</span>
+        <span class="why-tag">SAFE FOR CHILDREN &amp; PETS</span>
+        <span class="why-tag">ODOUR REDUCTION</span>
+        <span class="why-tag">SUSTAINABILITY</span>
+        <span class="why-tag">LONGER-LASTING CLEANLINESS</span>
+      </div>
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:120ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s11.q">Hospitality, Leisure &amp; Accommodation</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s11.a">In hospitality settings, EvoTek SST reduces surface treatment costs and cleaning labour while keeping surfaces looking newer for longer. Our polymeric matrices resist stains, repel spills, and reduce odours from food, smoke, footwear, and soft furnishings. This enhances guest experience, reduces turnaround times, and extends the life of décor, furniture, and fixtures — a high-impact upgrade for guest satisfaction and operational efficiency.</div>
+    <!-- Sub-sector cards -->
+    <div class="subsector-grid">
+
+      <!-- Household -->
+      <div class="subsector-card card-green reveal">
+        <h3>HOUSEHOLD SURFACES</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">The core domestic opportunity — everywhere people live and touch.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Kitchen counters</li>
+              <li>Fridges &amp; appliances</li>
+              <li>Bathroom tiles &amp; screens</li>
+              <li>Handles, switches &amp; remotes</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Stays cleaner longer</li>
+              <li>Resists grime build-up</li>
+              <li>Reduces odour</li>
+              <li>Wipes clean effortlessly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pet care -->
+      <div class="subsector-card reveal" style="transition-delay:60ms;">
+        <h3>PET CARE</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">A high-demand consumer segment where odour, residue, and chemical safety are constant concerns.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Pet bowls</li>
+              <li>Litter trays</li>
+              <li>Kennels &amp; crates</li>
+              <li>Pet beds &amp; mats</li>
+              <li>Aquaria &amp; terraria</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces odour significantly</li>
+              <li>Prevents residue staining</li>
+              <li>No harsh chemicals needed</li>
+              <li>Safer for animals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waste & Odour Control -->
+      <div class="subsector-card card-green reveal" style="transition-delay:120ms;">
+        <h3>WASTE &amp; ODOUR CONTROL</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">One of the most immediately compelling consumer benefits — odour prevention from the source.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Household bins</li>
+              <li>Food-waste caddies</li>
+              <li>Nappy bins</li>
+              <li>Outdoor wheelie bins</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Dramatically reduces odour</li>
+              <li>Prevents residue adhesion</li>
+              <li>Easier to clean</li>
+              <li>No fragrance masking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automotive & Transport -->
+      <div class="subsector-card reveal" style="transition-delay:180ms;">
+        <h3>AUTOMOTIVE &amp; TRANSPORT</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">Interior surfaces in cars, family vehicles, and child-safe environments.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Dashboards &amp; touch surfaces</li>
+              <li>Door handles</li>
+              <li>Boot liners</li>
+              <li>Child-seat plastics</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces smearing &amp; dust</li>
+              <li>Odour retention minimised</li>
+              <li>Safer for children</li>
+              <li>Surfaces stay cleaner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consumer electronics -->
+      <div class="subsector-card card-green reveal" style="transition-delay:240ms;">
+        <h3>CONSUMER ELECTRONICS</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">The surfaces we touch most — phones, keyboards, controllers — benefit from SST's anti-adhesion properties.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Phones, tablets &amp; cases</li>
+              <li>Keyboards &amp; mice</li>
+              <li>Game controllers</li>
+              <li>Remote controls</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Resists fingerprints &amp; grime</li>
+              <li>Stays cleaner</li>
+              <li>Reduces residue build-up</li>
+              <li>Maintains appearance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clothing & Accessories -->
+      <div class="subsector-card reveal" style="transition-delay:300ms;">
+        <h3>CLOTHING, FOOTWEAR &amp; ACCESSORIES</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-bottom:18px;">SST-enhanced fabrics stay fresher, feel more comfortable, and last significantly longer.</p>
+        <div class="app-benefits-grid">
+          <div>
+            <h4>APPLICATIONS</h4>
+            <ul class="mini-list">
+              <li>Insoles &amp; footwear liners</li>
+              <li>Sports equipment</li>
+              <li>Bags &amp; luggage</li>
+              <li>Outdoor gear</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BENEFITS</h4>
+            <ul class="mini-list green">
+              <li>Reduces odour retention</li>
+              <li>Moisture management</li>
+              <li>Extended garment life</li>
+              <li>No fragrance or chemical</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="faq-item reveal" style="transition-delay:160ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s12.q">Schools, Colleges &amp; Education</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s12.a">Educational environments become cleaner, safer, and more resilient with EvoTek SST. By reducing residue build-up and odours from footwear, sports equipment, food, and high-traffic areas, SST supports fresher learning spaces while extending the life of desks, equipment, and communal areas. With reduced maintenance costs and fewer cleaning hours, SST delivers budget savings and healthier environments for students and staff.</div>
-    </div>
-
-    <div class="faq-item reveal" style="transition-delay:200ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s13.q">Sports Centres, Gyms &amp; Fitness Facilities</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s13.a">Gyms and sports facilities benefit from up to 30× cost savings, safer environments, and reduced cleaning hours. SST repels sweat, oils, and residues, dramatically reducing odours from footwear, equipment, changing rooms, and high-use surfaces. The stain resistance, self-cleaning behaviour, and enhanced durability support cleaner, fresher, more resilient fitness environments — without chemical release or toxic agents.</div>
-    </div>
-
-    <!-- GROUP: SPECIALIST APPLICATIONS -->
-    <div class="section-label reveal" style="margin-top:48px;margin-bottom:24px;" data-i18n="sectors.grp5.label">SPECIALIST APPLICATIONS</div>
-
-    <div class="faq-item reveal" style="transition-delay:40ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s14.q">The Great Outdoors</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s14.a">For outdoor surfaces exposed to weather, UV, dirt, and moisture, EvoTek SST provides water-repellency, stain resistance, and odour reduction by preventing organic build-up and moisture retention. From outdoor furniture to signage, play areas, and public spaces, SST keeps surfaces cleaner, fresher, and longer-lasting — while reducing maintenance costs and extending asset life.</div>
-    </div>
-
-    <div class="faq-item reveal" style="transition-delay:80ms">
-      <button class="faq-q" aria-expanded="false">
-        <span data-i18n="sectors.s15.q">Female Apparel &amp; Personal Fabrics including Fashion &amp; Sportswear</span>
-        <span class="faq-icon">+</span>
-      </button>
-      <div class="faq-a" role="region" data-i18n="sectors.s15.a">EvoTek SST enhances female apparel — activewear, undergarments, hosiery, footwear liners, and everyday fabrics — through nanoscale surface-energy modification. Our coatings repel moisture, reduce irritation-related discomfort, prevent staining, and stop the build-up of residues that cause odour, sweat retention, and fabric dulling. Garments stay fresher for longer, feel more comfortable, and last significantly longer — all without chemical release, fragrances, or toxic agents. This is a discreet, safe, sustainable upgrade to personal fabric performance.</div>
+    <!-- Retail positioning -->
+    <div class="universal-msg reveal">
+      <blockquote>"Smart Surface Technology makes everyday surfaces naturally resistant to dirt, odour, and residue — without chemicals, without biocides, and without changing how people clean. It simply keeps surfaces cleaner for longer, using engineered surface physics."</blockquote>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:20px;">Retailers get a new premium tier: <strong style="color:var(--text)">surface enhancement</strong> rather than cleaning chemical. High-margin, low-risk, sustainability-aligned innovation that consumers instantly understand.</p>
+      <div class="philosophy-grid">
+        <span class="phi-tag">INHERENTLY NATURAL</span>
+        <span class="phi-tag">INHERENTLY RESPONSIBLE</span>
+        <span class="phi-tag">INHERENTLY SCALABLE</span>
+        <span class="phi-tag">HIGH-MARGIN CATEGORY</span>
+        <span class="phi-tag">ZERO REGULATORY BAGGAGE</span>
+      </div>
     </div>
 
   </div>
@@ -249,19 +953,19 @@
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-num accent" data-target="336" data-suffix="h">0h</div>
-          <div class="stat-label" data-i18n="sectors.stat1">CONTINUOUS PROTECTION</div>
+          <div class="stat-label">CONTINUOUS PROTECTION</div>
         </div>
         <div class="stat-item">
           <div class="stat-num accent" data-target="140" data-suffix="m²">0m²</div>
-          <div class="stat-label" data-i18n="sectors.stat2">COVERAGE PER LITRE</div>
+          <div class="stat-label">COVERAGE PER LITRE</div>
         </div>
         <div class="stat-item">
           <div class="stat-num accent" data-target="30" data-suffix="×">0×</div>
-          <div class="stat-label" data-i18n="sectors.stat3">COST REDUCTION VS CHEMICALS</div>
+          <div class="stat-label">COST REDUCTION VS CHEMICALS</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num accent" data-target="15">0</div>
-          <div class="stat-label" data-i18n="sectors.stat4">SECTORS SERVED</div>
+          <div class="stat-num accent" data-target="3">0</div>
+          <div class="stat-label">MARKET PILLARS</div>
         </div>
       </div>
     </div>
@@ -275,12 +979,12 @@
   <div class="container">
     <div class="cta-banner reveal">
       <div class="logo-watermark cta-logo-watermark"></div>
-      <div class="chip" style="margin:0 auto 20px;" data-i18n="sectors.cta.chip">GET STARTED</div>
-      <h2 data-i18n-html="sectors.cta.title">Ready to Transform Your <span class="accent">Environment?</span></h2>
-      <p data-i18n="sectors.cta.sub">Contact our team to discuss SST deployment across your sector — continuous, non-toxic, sustainable protection wherever you need it.</p>
+      <div class="chip" style="margin:0 auto 20px;">GET STARTED</div>
+      <h2>Ready to Transform Your <span style="color:var(--cyan)">Environment?</span></h2>
+      <p>Contact our team to discuss SST deployment across your sector — continuous, non-toxic, sustainable protection wherever you need it.</p>
       <div class="btns">
-        <a href="contact.html" class="btn-primary" data-i18n="sectors.cta.btn1">CONTACT US</a>
-        <a href="why-evotek.html" class="btn-ghost" data-i18n="sectors.cta.btn2">WHY EVOTEK</a>
+        <a href="contact.html" class="btn-primary">CONTACT US</a>
+        <a href="why-evotek.html" class="btn-ghost">WHY EVOTEK</a>
       </div>
     </div>
   </div>
@@ -293,7 +997,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand-name">EVOTEK INNOVATIONS</div>
-        <p class="footer-brand-desc" data-i18n="foot.desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
+        <p class="footer-brand-desc">Pioneering Smart Surface Technology for a more hygienic world. NHS supply partner. Biodegradable. Non-toxic.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;">
           <span class="accred-badge">NHS SUPPLY PARTNER</span>
           <span class="accred-badge">ISO 9001</span>
@@ -301,36 +1005,37 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading" data-i18n="foot.nav.h">NAVIGATION</div>
+        <div class="footer-heading">NAVIGATION</div>
         <ul class="footer-links">
-          <li><a href="about.html" data-i18n="foot.nav.1">About Us</a></li>
-          <li><a href="team.html" data-i18n="foot.nav.2">Meet the Team</a></li>
-          <li><a href="faq.html" data-i18n="foot.nav.3">FAQ</a></li>
-          <li><a href="contact.html" data-i18n="foot.nav.4">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading" data-i18n="foot.sec.h">SECTORS</div>
+        <div class="footer-heading">SECTORS</div>
         <ul class="footer-links">
-          <li><a href="sectors.html" data-i18n="foot.sec.1">Healthcare</a></li>
-          <li><a href="sectors.html" data-i18n="foot.sec.2">Food Service</a></li>
-          <li><a href="sectors.html" data-i18n="foot.sec.3">Public Transport</a></li>
-          <li><a href="sectors.html" data-i18n="foot.sec.4">Education</a></li>
+          <li><a href="sectors.html#wellness">Wellness &amp; Beauty</a></li>
+          <li><a href="sectors.html#public">Public &amp; Industrial</a></li>
+          <li><a href="sectors.html#retail">Retail &amp; Domestic</a></li>
+          <li><a href="sectors.html">All Sectors</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading" data-i18n="foot.con.h">CONTACT</div>
+        <div class="footer-heading">CONTACT</div>
         <div class="footer-contact-item">3rd Floor, 86-90 Paul Street<br><span>London, England</span></div>
         <div class="footer-contact-item"><a href="mailto:info@evotekinnovations.com" style="color:var(--cyan)">info@evotekinnovations.com</a></div>
-        <div class="footer-contact-item" style="margin-top:16px;font-size:0.7rem;letter-spacing:1px;"><span data-i18n="foot.hours.1">Mon–Thu: 09:00–20:00</span><br><span data-i18n="foot.hours.2">Friday: 09:00–15:00</span></div>
+        <div class="footer-contact-item" style="margin-top:16px;font-size:0.7rem;letter-spacing:1px;">Mon–Thu: 09:00–20:00<br>Friday: 09:00–15:00</div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span data-i18n="foot.copy">© 2025 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
+      <span>© 2025 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.</span>
       <span style="color:var(--border)">ESP // SST // LONDON</span>
     </div>
   </div>
 </footer>
+
 <script src="js/lang.js"></script>
 <script src="js/main.js"></script>
 </body>
