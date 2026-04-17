@@ -21,6 +21,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://evotekinnovations.co.uk/research.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://evotekinnovations.co.uk/claims.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
