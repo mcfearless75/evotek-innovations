@@ -50,7 +50,7 @@ const TRANSLATIONS = {
     'nature.insp.k':  'Inspired By',
     'nature.chrel.k': 'Chemical Release',
     'nature.tox.k':   'Toxicity',
-    'nature.amr.k':   'AMR Contribution',
+    'nature.amr.k':   'AMR/Biofilm',
     'nature.prot.k':  'Protection Duration',
     'nature.cov.k':   'Coverage / Litre',
 
@@ -672,7 +672,7 @@ const TRANSLATIONS = {
     'nature.insp.k':  'Inspiriert von',
     'nature.chrel.k': 'Chemische Freisetzung',
     'nature.tox.k':   'Toxizität',
-    'nature.amr.k':   'AMR-Beitrag',
+    'nature.amr.k':   'AMR/Biofilm',
     'nature.prot.k':  'Schutzdauer',
     'nature.cov.k':   'Abdeckung / Liter',
 
