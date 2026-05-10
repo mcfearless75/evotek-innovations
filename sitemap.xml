@@ -1,53 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://evotekinnovations.co.uk/</loc>
+    <loc>https://www.evotekinnovations.co.uk/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/about.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/about.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/about.html?lang=de"/>
+  </url>
+  <url>
+    <loc>https://www.evotekinnovations.co.uk/why-evotek.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/why-evotek.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/why-evotek.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/why-evotek.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/sectors.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/sectors.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/sectors.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/sectors.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/research.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/research.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/research.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/research.html</loc>
-    <priority>0.8</priority>
+    <loc>https://www.evotekinnovations.co.uk/claims.html</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://evotekinnovations.co.uk/claims.html</loc>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/claims.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/claims.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/biomimicry.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/biomimicry.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/biomimicry.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/biomimicry.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/faq.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/team.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/team.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/team.html</loc>
+    <loc>https://www.evotekinnovations.co.uk/faq.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/faq.html?lang=de"/>
   </url>
   <url>
-    <loc>https://evotekinnovations.co.uk/contact.html</loc>
-    <priority>0.7</priority>
+    <loc>https://www.evotekinnovations.co.uk/contact.html</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/contact.html?lang=de"/>
+  </url>
+  <url>
+    <loc>https://www.evotekinnovations.co.uk/privacy.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.evotekinnovations.co.uk/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.evotekinnovations.co.uk/privacy.html?lang=de"/>
   </url>
 </urlset>
