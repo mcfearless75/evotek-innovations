@@ -28,7 +28,7 @@
 
 /* ── Reset ────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { overflow-x: hidden; scroll-behavior: smooth; }
+html { overflow-x: hidden; scroll-behavior: smooth; scrollbar-gutter: stable; }
 body {
   background: var(--bg);
   color: var(--text);
@@ -156,6 +156,8 @@ nav.scrolled { border-bottom-color: rgba(0, 229, 255, 0.3); }
   border-radius: var(--radius);
   transition: color 0.2s, background 0.2s;
   position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .nav-link::after {
   content: '';

@@ -129,7 +129,7 @@ const TRANSLATIONS = {
     'foot.hours.1':  'Mon–Thu: 09:00–20:00',
     'foot.hours.2':  'Friday: 09:00–15:00',
     'foot.hours.3':  'Sat–Sun: Closed',
-    'foot.copy':     '© 2024 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.',
+    'foot.copy':     '© 2026 EVOTEK INNOVATIONS LTD. ALL RIGHTS RESERVED.',
 
     /* ── Nav Home back-link ───────────────────────────────── */
     'nav.home': 'HOME',
@@ -749,7 +749,7 @@ const TRANSLATIONS = {
     'foot.hours.1':  'Mo–Do: 09:00–20:00',
     'foot.hours.2':  'Freitag: 09:00–15:00',
     'foot.hours.3':  'Sa–So: Geschlossen',
-    'foot.copy':     '© 2024 EVOTEK INNOVATIONS LTD. ALLE RECHTE VORBEHALTEN.',
+    'foot.copy':     '© 2026 EVOTEK INNOVATIONS LTD. ALLE RECHTE VORBEHALTEN.',
 
     /* ── Nav Home back-link ───────────────────────────────── */
     'nav.home': 'STARTSEITE',
