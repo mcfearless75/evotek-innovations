@@ -209,16 +209,38 @@
   /* ── Contact form intercept ──────────────────────────────── */
   const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
       const btn = form.querySelector('button[type=submit]');
+      const originalText = btn.textContent;
       btn.textContent = 'TRANSMITTING...';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'MESSAGE SENT';
-        btn.style.background = 'var(--green)';
-        form.reset();
-      }, 1800);
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch('https://formsubmit.co/ajax/info@evotekinnovations.com', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+        const json = await res.json();
+        if (json.success === 'true' || json.success === true) {
+          btn.textContent = 'MESSAGE SENT';
+          btn.style.background = 'var(--green)';
+          form.reset();
+        } else {
+          throw new Error('FormSubmit rejected');
+        }
+      } catch (err) {
+        btn.textContent = 'SEND FAILED — PLEASE EMAIL US DIRECTLY';
+        btn.style.background = 'var(--red, #c0392b)';
+        btn.disabled = false;
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 5000);
+      }
     });
   }
 
