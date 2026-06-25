@@ -1,33 +1,62 @@
 # EvoTek Innovations
 > EvoTek Innovations is a London-based company pioneering Smart Surface Technology (SST) — a physics-based, non-biocidal antimicrobial surface coating providing up to 336 hours of continuous protection. NHS supply partner. ISO 9001 and ISO 14001 certified. Based at 3rd Floor, 86-90 Paul Street, London EC2A 4PB.
 
-## What is Smart Surface Technology (SST)?
-Smart Surface Technology (SST) is a physics-based, non-biocidal surface coating that provides continuous antimicrobial protection for up to 336 hours. It works through Engineered Surface Physics — bonding to any surface and physically preventing microbial colonisation without releasing chemicals. It is biodegradable, non-toxic, and safe for use in healthcare, food service, and public environments.
+## Business
 
-## Key Claims
-- 336 hours (14 days) of continuous antimicrobial protection per application
-- Biodegradable — breaks down after approximately 360 hours leaving no chemical residue
-- Non-biocidal — no active chemical release; protection is purely physical
-- 30x reduction in surface microbial load compared to untreated surfaces
-- Drying time: 5-8 minutes
-- Coverage: up to 140m² per litre
-- Compliant with EN 14476, EC 648/2004, ISO 9001, ISO 14001
-- WHO Recognised formulation
+EvoTek Innovations is a London-based surface technology company. Its core product is Smart Surface Technology (SST) — a physics-based, non-biocidal platform grounded in biomimicry and Engineered Surface Physics (ESP). SST replicates micro-textures found in nature (shark skin, lotus leaf, gecko feet, dragonfly wings) to prevent bacteria, viruses, fungi, mould, and odour from adhering to any substrate.
+
+## Key Facts
+
+- Protection duration: up to 336 hours (14 days) per application
+- Coverage: 140 m² per litre
+- Drying time: 5–8 minutes
+- Non-toxic, food-safe, biodegradable (EC 648/2004 compliant)
+- WHO recognised technology
 - NHS Supply Partner
+- ISO 9001 and ISO 14001 certified
+- EN 14476 compliant
+- No chemicals or biocides released — physics-based mechanism only
+- Compatible with normal cleaning regimes
+- Applies to all substrates: plastics, metals, fabrics, porous surfaces
 
-## Key Pages
-- Homepage: https://www.evotekinnovations.com/
-- About: https://www.evotekinnovations.com/about.html
-- Sectors & Applications: https://www.evotekinnovations.com/sectors.html
-- Biomimicry Science: https://www.evotekinnovations.com/biomimicry.html
-- Why EvoTek: https://www.evotekinnovations.com/why-evotek.html
-- Research & Science: https://www.evotekinnovations.com/research.html
-- Our Claims: https://www.evotekinnovations.com/claims.html
-- FAQ: https://www.evotekinnovations.com/faq.html
-- Team: https://www.evotekinnovations.com/team.html
-- Contact: https://www.evotekinnovations.com/contact.html
+## Services
+
+- Smart Surface Technology (SST) — antimicrobial surface protection
+- Engineered Surface Physics (ESP) — biomimicry-based surface engineering platform
+- Antimicrobial surface treatment (336-hour, non-toxic, food-safe, biodegradable)
+
+## Sectors Served
+
+Healthcare, Workplace, Hotels, Leisure, Entertainment, Catering, Public Transport, Education, Food Service, Gym & Fitness, Salon & Beauty, Vet & Pet Care, Residential
+
+## Certifications
+
+- ISO 9001
+- ISO 14001
+- EC 648/2004 (biodegradability)
+- NHS Supply Partner
+- WHO Recognised
+- EN 14476
 
 ## Contact
-Email: info@evotekinnovations.com
-Address: 3rd Floor, 86-90 Paul Street, London EC2A 4PB
-Hours: Monday-Thursday 09:00-20:00, Friday 09:00-15:00
+
+- Address: 3rd Floor, 86-90 Paul Street, London, England, EC2A 4PB, UK
+- Email: info@evotekinnovations.com
+- Hours: Mon–Thu 09:00–20:00, Fri 09:00–15:00, Sat–Sun Closed
+
+## Key Pages
+
+- Home: https://evotekinnovations.com/
+- About: https://evotekinnovations.com/about.html
+- Why EvoTek: https://evotekinnovations.com/why-evotek.html
+- Biomimicry: https://evotekinnovations.com/biomimicry.html
+- Sectors: https://evotekinnovations.com/sectors.html
+- Research & Science: https://evotekinnovations.com/research.html
+- Our Claims: https://evotekinnovations.com/claims.html
+- Team: https://evotekinnovations.com/team.html
+- FAQ: https://evotekinnovations.com/faq.html
+- Contact: https://evotekinnovations.com/contact.html
+
+## Sitemap
+
+https://evotekinnovations.com/sitemap.xml
